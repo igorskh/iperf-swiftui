@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB5A78A02548E81C0003F4F7 /* types.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A789F2548E81C0003F4F7 /* types.swift */; };
+		CBBC806D25489E9C00D19BFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC806C25489E9C00D19BFF /* AppDelegate.swift */; };
+		CBBC806F25489E9C00D19BFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC806E25489E9C00D19BFF /* SceneDelegate.swift */; };
+		CBBC807125489E9C00D19BFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC807025489E9C00D19BFF /* ContentView.swift */; };
+		CBBC807325489E9E00D19BFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBC807225489E9E00D19BFF /* Assets.xcassets */; };
+		CBBC807625489E9E00D19BFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBC807525489E9E00D19BFF /* Preview Assets.xcassets */; };
+		CBBC807925489E9E00D19BFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBC807725489E9E00D19BFF /* LaunchScreen.storyboard */; };
+		CBBC80A725489EDB00D19BFF /* cjson.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC808225489EDB00D19BFF /* cjson.c */; };
+		CBBC80A825489EDB00D19BFF /* dscp.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC808425489EDB00D19BFF /* dscp.c */; };
+		CBBC80A925489EDB00D19BFF /* iperf_api.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC808725489EDB00D19BFF /* iperf_api.c */; };
+		CBBC80AA25489EDB00D19BFF /* iperf_auth.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC808925489EDB00D19BFF /* iperf_auth.c */; };
+		CBBC80AB25489EDB00D19BFF /* iperf_client_api.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC808B25489EDB00D19BFF /* iperf_client_api.c */; };
+		CBBC80AC25489EDB00D19BFF /* iperf_error.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC808D25489EDB00D19BFF /* iperf_error.c */; };
+		CBBC80AD25489EDB00D19BFF /* iperf_locale.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC808E25489EDB00D19BFF /* iperf_locale.c */; };
+		CBBC80AE25489EDB00D19BFF /* iperf_sctp.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809025489EDB00D19BFF /* iperf_sctp.c */; };
+		CBBC80AF25489EDB00D19BFF /* iperf_server_api.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809225489EDB00D19BFF /* iperf_server_api.c */; };
+		CBBC80B025489EDB00D19BFF /* iperf_tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809325489EDB00D19BFF /* iperf_tcp.c */; };
+		CBBC80B125489EDB00D19BFF /* iperf_time.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809525489EDB00D19BFF /* iperf_time.c */; };
+		CBBC80B225489EDB00D19BFF /* iperf_udp.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809725489EDB00D19BFF /* iperf_udp.c */; };
+		CBBC80B325489EDB00D19BFF /* iperf_util.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809925489EDB00D19BFF /* iperf_util.c */; };
+		CBBC80B425489EDB00D19BFF /* net.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809B25489EDB00D19BFF /* net.c */; };
+		CBBC80B525489EDB00D19BFF /* tcp_info.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809F25489EDB00D19BFF /* tcp_info.c */; };
+		CBBC80B625489EDB00D19BFF /* tcp_window_size.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC80A025489EDB00D19BFF /* tcp_window_size.c */; };
+		CBBC80B725489EDB00D19BFF /* timer.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC80A225489EDB00D19BFF /* timer.c */; };
+		CBBC80B825489EDB00D19BFF /* units.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC80A425489EDB00D19BFF /* units.c */; };
+		CBBC80BF25489FAC00D19BFF /* IperfRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC80BE25489FAC00D19BFF /* IperfRunner.swift */; };
+		CBCA40A92549FECB009DA63C /* OptionsPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40A82549FECB009DA63C /* OptionsPicker.swift */; };
+		CBCA40AD2549FEF7009DA63C /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40AC2549FEF7009DA63C /* StartButton.swift */; };
+		CBCA40B1254A238E009DA63C /* TextFieldWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40B0254A238E009DA63C /* TextFieldWithLabel.swift */; };
+		CBCA40B4254A2668009DA63C /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40B3254A2668009DA63C /* ResultsView.swift */; };
+		CBCA40B7254A267F009DA63C /* MoreSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40B6254A267F009DA63C /* MoreSettingsView.swift */; };
+		CBF726B2254968BE002F5354 /* typesForUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF726B1254968BE002F5354 /* typesForUI.swift */; };
+		CBF726B525497A78002F5354 /* errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF726B425497A78002F5354 /* errors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB5A789F2548E81C0003F4F7 /* types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = types.swift; sourceTree = "<group>"; };
+		CBBC806925489E9C00D19BFF /* iperf3-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iperf3-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBC806C25489E9C00D19BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBBC806E25489E9C00D19BFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CBBC807025489E9C00D19BFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CBBC807225489E9E00D19BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBBC807525489E9E00D19BFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CBBC807825489E9E00D19BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBBC807A25489E9E00D19BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBBC808225489EDB00D19BFF /* cjson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cjson.c; sourceTree = "<group>"; };
+		CBBC808325489EDB00D19BFF /* cjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cjson.h; sourceTree = "<group>"; };
+		CBBC808425489EDB00D19BFF /* dscp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dscp.c; sourceTree = "<group>"; };
+		CBBC808525489EDB00D19BFF /* flowlabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flowlabel.h; sourceTree = "<group>"; };
+		CBBC808625489EDB00D19BFF /* iperf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf.h; sourceTree = "<group>"; };
+		CBBC808725489EDB00D19BFF /* iperf_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_api.c; sourceTree = "<group>"; };
+		CBBC808825489EDB00D19BFF /* iperf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_api.h; sourceTree = "<group>"; };
+		CBBC808925489EDB00D19BFF /* iperf_auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_auth.c; sourceTree = "<group>"; };
+		CBBC808A25489EDB00D19BFF /* iperf_auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_auth.h; sourceTree = "<group>"; };
+		CBBC808B25489EDB00D19BFF /* iperf_client_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_client_api.c; sourceTree = "<group>"; };
+		CBBC808C25489EDB00D19BFF /* iperf_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_config.h; sourceTree = "<group>"; };
+		CBBC808D25489EDB00D19BFF /* iperf_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_error.c; sourceTree = "<group>"; };
+		CBBC808E25489EDB00D19BFF /* iperf_locale.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_locale.c; sourceTree = "<group>"; };
+		CBBC808F25489EDB00D19BFF /* iperf_locale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_locale.h; sourceTree = "<group>"; };
+		CBBC809025489EDB00D19BFF /* iperf_sctp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_sctp.c; sourceTree = "<group>"; };
+		CBBC809125489EDB00D19BFF /* iperf_sctp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_sctp.h; sourceTree = "<group>"; };
+		CBBC809225489EDB00D19BFF /* iperf_server_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_server_api.c; sourceTree = "<group>"; };
+		CBBC809325489EDB00D19BFF /* iperf_tcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_tcp.c; sourceTree = "<group>"; };
+		CBBC809425489EDB00D19BFF /* iperf_tcp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_tcp.h; sourceTree = "<group>"; };
+		CBBC809525489EDB00D19BFF /* iperf_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_time.c; sourceTree = "<group>"; };
+		CBBC809625489EDB00D19BFF /* iperf_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_time.h; sourceTree = "<group>"; };
+		CBBC809725489EDB00D19BFF /* iperf_udp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_udp.c; sourceTree = "<group>"; };
+		CBBC809825489EDB00D19BFF /* iperf_udp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_udp.h; sourceTree = "<group>"; };
+		CBBC809925489EDB00D19BFF /* iperf_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_util.c; sourceTree = "<group>"; };
+		CBBC809A25489EDB00D19BFF /* iperf_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_util.h; sourceTree = "<group>"; };
+		CBBC809B25489EDB00D19BFF /* net.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net.c; sourceTree = "<group>"; };
+		CBBC809C25489EDB00D19BFF /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net.h; sourceTree = "<group>"; };
+		CBBC809D25489EDB00D19BFF /* portable_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portable_endian.h; sourceTree = "<group>"; };
+		CBBC809E25489EDB00D19BFF /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
+		CBBC809F25489EDB00D19BFF /* tcp_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcp_info.c; sourceTree = "<group>"; };
+		CBBC80A025489EDB00D19BFF /* tcp_window_size.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcp_window_size.c; sourceTree = "<group>"; };
+		CBBC80A125489EDB00D19BFF /* tcp_window_size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcp_window_size.h; sourceTree = "<group>"; };
+		CBBC80A225489EDB00D19BFF /* timer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = timer.c; sourceTree = "<group>"; };
+		CBBC80A325489EDB00D19BFF /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		CBBC80A425489EDB00D19BFF /* units.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = units.c; sourceTree = "<group>"; };
+		CBBC80A525489EDB00D19BFF /* units.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = units.h; sourceTree = "<group>"; };
+		CBBC80A625489EDB00D19BFF /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		CBBC80BA25489F1200D19BFF /* Iperf-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Iperf-Bridging-Header.h"; sourceTree = "<group>"; };
+		CBBC80BE25489FAC00D19BFF /* IperfRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IperfRunner.swift; sourceTree = "<group>"; };
+		CBBC80C12548A40E00D19BFF /* iperf3-swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iperf3-swift.entitlements"; sourceTree = "<group>"; };
+		CBCA40A82549FECB009DA63C /* OptionsPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsPicker.swift; sourceTree = "<group>"; };
+		CBCA40AC2549FEF7009DA63C /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		CBCA40B0254A238E009DA63C /* TextFieldWithLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithLabel.swift; sourceTree = "<group>"; };
+		CBCA40B3254A2668009DA63C /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		CBCA40B6254A267F009DA63C /* MoreSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSettingsView.swift; sourceTree = "<group>"; };
+		CBF726B1254968BE002F5354 /* typesForUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typesForUI.swift; sourceTree = "<group>"; };
+		CBF726B425497A78002F5354 /* errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = errors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBBC806625489E9C00D19BFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB1F32D425544EAD0009DC0E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CBBC808125489EDB00D19BFF /* iperf3 */,
+				CBBC80BA25489F1200D19BFF /* Iperf-Bridging-Header.h */,
+				CBBC80BE25489FAC00D19BFF /* IperfRunner.swift */,
+				CB5A789F2548E81C0003F4F7 /* types.swift */,
+				CBF726B1254968BE002F5354 /* typesForUI.swift */,
+				CBF726B425497A78002F5354 /* errors.swift */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		CB1F32D825544F2F0009DC0E /* components */ = {
+			isa = PBXGroup;
+			children = (
+				CBCA40A82549FECB009DA63C /* OptionsPicker.swift */,
+				CBCA40AC2549FEF7009DA63C /* StartButton.swift */,
+				CBCA40B0254A238E009DA63C /* TextFieldWithLabel.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		CBBC806025489E9C00D19BFF = {
+			isa = PBXGroup;
+			children = (
+				CBBC806B25489E9C00D19BFF /* iperf3-swift */,
+				CBBC806A25489E9C00D19BFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBBC806A25489E9C00D19BFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBBC806925489E9C00D19BFF /* iperf3-swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBBC806B25489E9C00D19BFF /* iperf3-swift */ = {
+			isa = PBXGroup;
+			children = (
+				CB1F32D825544F2F0009DC0E /* components */,
+				CB1F32D425544EAD0009DC0E /* lib */,
+				CBCA40A72549FEBC009DA63C /* views */,
+				CBBC80C12548A40E00D19BFF /* iperf3-swift.entitlements */,
+				CBBC806C25489E9C00D19BFF /* AppDelegate.swift */,
+				CBBC806E25489E9C00D19BFF /* SceneDelegate.swift */,
+				CBBC807025489E9C00D19BFF /* ContentView.swift */,
+				CBBC807225489E9E00D19BFF /* Assets.xcassets */,
+				CBBC807725489E9E00D19BFF /* LaunchScreen.storyboard */,
+				CBBC807A25489E9E00D19BFF /* Info.plist */,
+				CBBC807425489E9E00D19BFF /* Preview Content */,
+			);
+			path = "iperf3-swift";
+			sourceTree = "<group>";
+		};
+		CBBC807425489E9E00D19BFF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CBBC807525489E9E00D19BFF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CBBC808125489EDB00D19BFF /* iperf3 */ = {
+			isa = PBXGroup;
+			children = (
+				CBBC808225489EDB00D19BFF /* cjson.c */,
+				CBBC808325489EDB00D19BFF /* cjson.h */,
+				CBBC808425489EDB00D19BFF /* dscp.c */,
+				CBBC808525489EDB00D19BFF /* flowlabel.h */,
+				CBBC808625489EDB00D19BFF /* iperf.h */,
+				CBBC808725489EDB00D19BFF /* iperf_api.c */,
+				CBBC808825489EDB00D19BFF /* iperf_api.h */,
+				CBBC808925489EDB00D19BFF /* iperf_auth.c */,
+				CBBC808A25489EDB00D19BFF /* iperf_auth.h */,
+				CBBC808B25489EDB00D19BFF /* iperf_client_api.c */,
+				CBBC808C25489EDB00D19BFF /* iperf_config.h */,
+				CBBC808D25489EDB00D19BFF /* iperf_error.c */,
+				CBBC808E25489EDB00D19BFF /* iperf_locale.c */,
+				CBBC808F25489EDB00D19BFF /* iperf_locale.h */,
+				CBBC809025489EDB00D19BFF /* iperf_sctp.c */,
+				CBBC809125489EDB00D19BFF /* iperf_sctp.h */,
+				CBBC809225489EDB00D19BFF /* iperf_server_api.c */,
+				CBBC809325489EDB00D19BFF /* iperf_tcp.c */,
+				CBBC809425489EDB00D19BFF /* iperf_tcp.h */,
+				CBBC809525489EDB00D19BFF /* iperf_time.c */,
+				CBBC809625489EDB00D19BFF /* iperf_time.h */,
+				CBBC809725489EDB00D19BFF /* iperf_udp.c */,
+				CBBC809825489EDB00D19BFF /* iperf_udp.h */,
+				CBBC809925489EDB00D19BFF /* iperf_util.c */,
+				CBBC809A25489EDB00D19BFF /* iperf_util.h */,
+				CBBC809B25489EDB00D19BFF /* net.c */,
+				CBBC809C25489EDB00D19BFF /* net.h */,
+				CBBC809D25489EDB00D19BFF /* portable_endian.h */,
+				CBBC809E25489EDB00D19BFF /* queue.h */,
+				CBBC809F25489EDB00D19BFF /* tcp_info.c */,
+				CBBC80A025489EDB00D19BFF /* tcp_window_size.c */,
+				CBBC80A125489EDB00D19BFF /* tcp_window_size.h */,
+				CBBC80A225489EDB00D19BFF /* timer.c */,
+				CBBC80A325489EDB00D19BFF /* timer.h */,
+				CBBC80A425489EDB00D19BFF /* units.c */,
+				CBBC80A525489EDB00D19BFF /* units.h */,
+				CBBC80A625489EDB00D19BFF /* version.h */,
+			);
+			path = iperf3;
+			sourceTree = "<group>";
+		};
+		CBCA40A72549FEBC009DA63C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CBCA40B3254A2668009DA63C /* ResultsView.swift */,
+				CBCA40B6254A267F009DA63C /* MoreSettingsView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBBC806825489E9C00D19BFF /* iperf3-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBBC807D25489E9E00D19BFF /* Build configuration list for PBXNativeTarget "iperf3-swift" */;
+			buildPhases = (
+				CBBC806525489E9C00D19BFF /* Sources */,
+				CBBC806625489E9C00D19BFF /* Frameworks */,
+				CBBC806725489E9C00D19BFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iperf3-swift";
+			productName = "iperf3-swift";
+			productReference = CBBC806925489E9C00D19BFF /* iperf3-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBBC806125489E9C00D19BFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					CBBC806825489E9C00D19BFF = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = CBBC806425489E9C00D19BFF /* Build configuration list for PBXProject "iperf3-swift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBBC806025489E9C00D19BFF;
+			productRefGroup = CBBC806A25489E9C00D19BFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBBC806825489E9C00D19BFF /* iperf3-swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBBC806725489E9C00D19BFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBC807925489E9E00D19BFF /* LaunchScreen.storyboard in Resources */,
+				CBBC807625489E9E00D19BFF /* Preview Assets.xcassets in Resources */,
+				CBBC807325489E9E00D19BFF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBBC806525489E9C00D19BFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBC80B825489EDB00D19BFF /* units.c in Sources */,
+				CBBC80B325489EDB00D19BFF /* iperf_util.c in Sources */,
+				CBBC80BF25489FAC00D19BFF /* IperfRunner.swift in Sources */,
+				CBBC80AB25489EDB00D19BFF /* iperf_client_api.c in Sources */,
+				CBCA40B7254A267F009DA63C /* MoreSettingsView.swift in Sources */,
+				CBBC80AC25489EDB00D19BFF /* iperf_error.c in Sources */,
+				CBBC80B025489EDB00D19BFF /* iperf_tcp.c in Sources */,
+				CBCA40AD2549FEF7009DA63C /* StartButton.swift in Sources */,
+				CBCA40A92549FECB009DA63C /* OptionsPicker.swift in Sources */,
+				CBBC80AD25489EDB00D19BFF /* iperf_locale.c in Sources */,
+				CBBC80A825489EDB00D19BFF /* dscp.c in Sources */,
+				CBBC806D25489E9C00D19BFF /* AppDelegate.swift in Sources */,
+				CBBC80B225489EDB00D19BFF /* iperf_udp.c in Sources */,
+				CB5A78A02548E81C0003F4F7 /* types.swift in Sources */,
+				CBBC80A725489EDB00D19BFF /* cjson.c in Sources */,
+				CBBC80AA25489EDB00D19BFF /* iperf_auth.c in Sources */,
+				CBBC80B425489EDB00D19BFF /* net.c in Sources */,
+				CBCA40B1254A238E009DA63C /* TextFieldWithLabel.swift in Sources */,
+				CBBC80A925489EDB00D19BFF /* iperf_api.c in Sources */,
+				CBBC80AF25489EDB00D19BFF /* iperf_server_api.c in Sources */,
+				CBBC806F25489E9C00D19BFF /* SceneDelegate.swift in Sources */,
+				CBF726B525497A78002F5354 /* errors.swift in Sources */,
+				CBBC80B625489EDB00D19BFF /* tcp_window_size.c in Sources */,
+				CBBC80B125489EDB00D19BFF /* iperf_time.c in Sources */,
+				CBBC80B525489EDB00D19BFF /* tcp_info.c in Sources */,
+				CBCA40B4254A2668009DA63C /* ResultsView.swift in Sources */,
+				CBBC80B725489EDB00D19BFF /* timer.c in Sources */,
+				CBF726B2254968BE002F5354 /* typesForUI.swift in Sources */,
+				CBBC807125489E9C00D19BFF /* ContentView.swift in Sources */,
+				CBBC80AE25489EDB00D19BFF /* iperf_sctp.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBBC807725489E9E00D19BFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBBC807825489E9E00D19BFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBBC807B25489E9E00D19BFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "iperf3-swift/lib/Iperf-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBBC807C25489E9E00D19BFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "iperf3-swift/lib/Iperf-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBBC807E25489E9E00D19BFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iperf3-swift/iperf3-swift.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iperf3-swift/Preview Content\"";
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "iperf3-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.iperf3-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBBC807F25489E9E00D19BFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iperf3-swift/iperf3-swift.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iperf3-swift/Preview Content\"";
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "iperf3-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.iperf3-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBBC806425489E9C00D19BFF /* Build configuration list for PBXProject "iperf3-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBBC807B25489E9E00D19BFF /* Debug */,
+				CBBC807C25489E9E00D19BFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBBC807D25489E9E00D19BFF /* Build configuration list for PBXNativeTarget "iperf3-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBBC807E25489E9E00D19BFF /* Debug */,
+				CBBC807F25489E9E00D19BFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBBC806125489E9C00D19BFF /* Project object */;
+}
