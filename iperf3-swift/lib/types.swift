@@ -7,15 +7,46 @@
 
 import Foundation
 
+protocol HasDescription {
+    var description: String { get }
+    var uiImage: String? { get }
+}
+
 enum IperfRunnerState {
     case ready
     case initialising
     case running
 }
 
-protocol HasDescription {
-    var description: String { get }
-    var uiImage: String? { get }
+enum IperfProtocol: HasDescription {
+    case tcp
+    case udp
+    case sctp
+    
+    var uiImage: String? {
+        return nil
+    }
+    var description: String {
+        switch self {
+        case .tcp:
+            return "TCP"
+        case .udp:
+            return "UDP"
+        case .sctp:
+            return "SCTP"
+        }
+    }
+    var iperfConfigValue: Int32 {
+        switch self {
+        case .tcp:
+            return Ptcp
+        case .udp:
+            return Pudp
+        case .sctp:
+            return Psctp
+        }
+        
+    }
 }
 
 enum IperfRole: Int8, HasDescription {
@@ -92,6 +123,9 @@ struct IperfConfiguration {
     var role = IperfRole.client
     var reverse = IperfDirection.download
     var port = 5201
+    var prot = IperfProtocol.tcp
+    
+    var rate: Int32 = UDP_RATE
     
     var duration: TimeInterval?
     var timeout: TimeInterval?

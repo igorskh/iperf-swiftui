@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CB5A78A02548E81C0003F4F7 /* types.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A789F2548E81C0003F4F7 /* types.swift */; };
+		CB9624292556C86300E096F6 /* TextFieldWithOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9624282556C86300E096F6 /* TextFieldWithOption.swift */; };
 		CBBC806D25489E9C00D19BFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC806C25489E9C00D19BFF /* AppDelegate.swift */; };
 		CBBC806F25489E9C00D19BFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC806E25489E9C00D19BFF /* SceneDelegate.swift */; };
 		CBBC807125489E9C00D19BFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC807025489E9C00D19BFF /* ContentView.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		CB5A789F2548E81C0003F4F7 /* types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = types.swift; sourceTree = "<group>"; };
+		CB9624282556C86300E096F6 /* TextFieldWithOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithOption.swift; sourceTree = "<group>"; };
 		CBBC806925489E9C00D19BFF /* iperf3-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iperf3-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBC806C25489E9C00D19BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBBC806E25489E9C00D19BFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				CBCA40A82549FECB009DA63C /* OptionsPicker.swift */,
 				CBCA40AC2549FEF7009DA63C /* StartButton.swift */,
+				CB9624282556C86300E096F6 /* TextFieldWithOption.swift */,
 				CBCA40B0254A238E009DA63C /* TextFieldWithLabel.swift */,
 			);
 			path = components;
@@ -322,6 +325,7 @@
 				CBBC80AF25489EDB00D19BFF /* iperf_server_api.c in Sources */,
 				CBBC806F25489E9C00D19BFF /* SceneDelegate.swift in Sources */,
 				CBF726B525497A78002F5354 /* errors.swift in Sources */,
+				CB9624292556C86300E096F6 /* TextFieldWithOption.swift in Sources */,
 				CBBC80B625489EDB00D19BFF /* tcp_window_size.c in Sources */,
 				CBBC80B125489EDB00D19BFF /* iperf_time.c in Sources */,
 				CBBC80B525489EDB00D19BFF /* tcp_info.c in Sources */,

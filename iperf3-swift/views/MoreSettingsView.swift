@@ -7,9 +7,13 @@
 
 import SwiftUI
 
+let protocolOptions: [IperfProtocol] = [.tcp, .udp]
+
 struct MoreSettingsView: View {
     @State var isPresented: Bool = false
     @Binding var formInput: IperfConfigurationInput
+    
+    @State var protocolIndex: Int = 0
     
     var body: some View {
         Button(action: { isPresented = true }) {
@@ -25,9 +29,22 @@ struct MoreSettingsView: View {
                 Form {
                     if formInput.role == .client {
                         Section {
+                            OptionsPicker(
+                                options: protocolOptions,
+                                selected: $protocolIndex,
+                                onChange: { index in formInput.prot = protocolOptions[protocolIndex] }
+                            )
+                            
+                        }
+                        Section {
                             TextFieldWithLabel(label: "Duration", text: $formInput.duration)
-                            TextFieldWithLabel(label: "Streams", text: $formInput.nofStreams)
-                            TextFieldWithLabel(label: "TOS", text: $formInput.tos)
+                            if formInput.prot == .tcp {
+                                TextFieldWithLabel(label: "Streams", text: $formInput.nofStreams)
+                            }
+//                            TextFieldWithLabel(label: "Type Of Service", text: $formInput.tos)
+                            if formInput.prot == .udp {
+                                TextFieldWithOption(label: "Rate", value: $formInput.rate, options: rateOptions)
+                            }
                         }
                     }
                     Section {
@@ -38,6 +55,11 @@ struct MoreSettingsView: View {
                 .navigationBarItems(trailing: Button("Done") { isPresented = false} )
             }
             .navigationViewStyle(StackNavigationViewStyle())
+        }
+        .onAppear {
+            if let index = protocolOptions.firstIndex(of: formInput.prot) {
+                protocolIndex = index
+            }
         }
     }
 }

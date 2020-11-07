@@ -89,8 +89,19 @@ class IperfRunner: ObservableObject {
         }
         
         if configuration.role == .client {
+            set_protocol(test, configuration.prot.iperfConfigValue)
             iperf_set_test_reverse(test, configuration.reverse.rawValue)
-            iperf_set_test_num_streams(test, Int32(configuration.numStreams))
+            
+            var blksize: Int32 = 0
+            if configuration.prot == .tcp {
+                blksize = DEFAULT_TCP_BLKSIZE
+                iperf_set_test_num_streams(test, Int32(configuration.numStreams))
+            } else if configuration.prot == .udp {
+                iperf_set_test_rate(test, UInt64(configuration.rate))
+            } else if configuration.prot == .sctp {
+                blksize = DEFAULT_SCTP_BLKSIZE
+            }
+            iperf_set_test_blksize(test, blksize)
             
             if let addr = addr {
                 iperf_set_test_server_hostname(test, addr)
