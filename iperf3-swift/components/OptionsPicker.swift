@@ -14,20 +14,20 @@ struct OptionsPicker: View {
     
     var body: some View {
         HStack(spacing: 0) {
-            ForEach(0..<options.count) {
+            ForEach(0..<options.count) { index in
                 OptionsPickerIcon(
-                    backgroundColor: $0 == selected ? Color.secondary : Color(UIColor.secondarySystemGroupedBackground),
-                    uiImage: options[$0].uiImage,
-                    text: options[$0].description
+                    backgroundColor: index == selected ? Color.secondary : Color(UIColor.secondarySystemGroupedBackground),
+                    uiImage: options[index].uiImage,
+                    text: options[index].description
                 )
+                .onTapGesture {
+                    selected = index == selected ? (selected + 1)%options.count : index
+                    onChange(selected)
+                }
             }
         }
         .cornerRadius(5)
         .animation(.spring())
-        .onTapGesture {
-            selected = (selected + 1)%options.count
-            onChange(selected)
-        }
     }
 }
 
