@@ -16,7 +16,7 @@ struct ResultsView: View {
                 HStack {
                     Text("\(String(format: "%.1f", res.duration))")
                     Spacer()
-                    Text("\(String(format: "%.1f Mbps", res.throughput.Mbps))")
+                    Text("\(res.throughput.pretty)")
                 }
             }
         }.animation(.linear)

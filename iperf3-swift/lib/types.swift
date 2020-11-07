@@ -138,18 +138,35 @@ struct IperfConfiguration {
 
 struct IperfThroughput {
     var rawValue: Double
-    var bitsValue: Double
+    var bps: Double {
+        rawValue*8
+    }
     
+    var Kbps: Double {
+        return bps / 1024
+    }
     var Mbps: Double {
-        return bitsValue / 1e6
+        return Kbps / 1024
     }
     var Gbps: Double {
-        return bitsValue / 1e9
+        return Mbps / 1024
+    }
+    
+    var pretty: String {
+        if bps <= 1024 {
+            return "\(String(format: "%.1f", bps)) bps"
+        }
+        if Kbps <= 1024 {
+            return "\(String(format: "%.1f", Kbps)) Kbps"
+        }
+        if Mbps <= 1024 {
+            return "\(String(format: "%.1f", Mbps)) Mbps"
+        }
+        return "\(String(format: "%.1f", Gbps)) Gbps"
     }
     
     init(bytesPerSecond initValue: Double) {
         rawValue = initValue
-        bitsValue = initValue*8
     }
     
     init(bytes initValue: UInt64, seconds: TimeInterval) {
