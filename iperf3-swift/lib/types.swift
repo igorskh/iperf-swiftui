@@ -202,14 +202,16 @@ struct IperfStreamIntervalResult {
         
         bytesTransferred = results.bytes_transferred
         intervalDuration = Double(results.interval_duration)
+        
+        // MARK: UDP only results
         intervalPacketCount = results.interval_packet_count
         intervalOutoforderPackets = results.interval_outoforder_packets
         intervalCntError = results.interval_cnt_error
-        
         packetCount = results.packet_count
         jitter = results.jitter
         outoforderPackets = results.outoforder_packets
         cnt_error = results.cnt_error
+        
         omitted = results.omitted
         
         intervalRetrans = results.interval_retrans
