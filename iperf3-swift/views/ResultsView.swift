@@ -22,3 +22,13 @@ struct ResultsView: View {
         }.animation(.linear)
     }
 }
+
+struct ResultsView_Previews: PreviewProvider {
+    static var previews: some View {
+        let results: [IperfIntervalResult] = [
+            IperfIntervalResult(),
+            IperfIntervalResult()
+        ]
+        ResultsView(results: .constant(results))
+    }
+}

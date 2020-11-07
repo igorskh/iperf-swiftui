@@ -29,3 +29,9 @@ struct StartButton: View {
         }.font(.title)
     }
 }
+
+struct StartButton_Previews: PreviewProvider {
+    static var previews: some View {
+        StartButton(state: .constant(.initialising))
+    }
+}

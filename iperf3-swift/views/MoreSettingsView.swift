@@ -67,3 +67,10 @@ struct MoreSettingsView: View {
         }
     }
 }
+
+struct MoreSettingsView_Previews: PreviewProvider {
+    
+    static var previews: some View {
+        MoreSettingsView(formInput: .constant(IperfConfigurationInput(address: "123.123.123.123")))
+    }
+}

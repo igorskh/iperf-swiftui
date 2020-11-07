@@ -30,3 +30,10 @@ struct TextFieldWithOption<T>: View where T: TextFieldOption {
         }
     }
 }
+
+struct TextFieldWithOption_Previews: PreviewProvider {
+    static var previews: some View {
+        let opt = StringWithOption<RateOption>(value: "1", option: rateOptions[0], optionIndex: 0)
+        return TextFieldWithOption(label: "test", value: .constant(opt), options: rateOptions)
+    }
+}

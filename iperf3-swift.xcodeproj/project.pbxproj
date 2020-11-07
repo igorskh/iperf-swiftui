@@ -39,6 +39,7 @@
 		CBCA40B1254A238E009DA63C /* TextFieldWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40B0254A238E009DA63C /* TextFieldWithLabel.swift */; };
 		CBCA40B4254A2668009DA63C /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40B3254A2668009DA63C /* ResultsView.swift */; };
 		CBCA40B7254A267F009DA63C /* MoreSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40B6254A267F009DA63C /* MoreSettingsView.swift */; };
+		CBDB6A002556FF3A0010443A /* OptionsPickerIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB69FF2556FF3A0010443A /* OptionsPickerIcon.swift */; };
 		CBF726B2254968BE002F5354 /* typesForUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF726B1254968BE002F5354 /* typesForUI.swift */; };
 		CBF726B525497A78002F5354 /* errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF726B425497A78002F5354 /* errors.swift */; };
 /* End PBXBuildFile section */
@@ -99,6 +100,7 @@
 		CBCA40B0254A238E009DA63C /* TextFieldWithLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithLabel.swift; sourceTree = "<group>"; };
 		CBCA40B3254A2668009DA63C /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		CBCA40B6254A267F009DA63C /* MoreSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSettingsView.swift; sourceTree = "<group>"; };
+		CBDB69FF2556FF3A0010443A /* OptionsPickerIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsPickerIcon.swift; sourceTree = "<group>"; };
 		CBF726B1254968BE002F5354 /* typesForUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typesForUI.swift; sourceTree = "<group>"; };
 		CBF726B425497A78002F5354 /* errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +136,7 @@
 				CBCA40AC2549FEF7009DA63C /* StartButton.swift */,
 				CB9624282556C86300E096F6 /* TextFieldWithOption.swift */,
 				CBCA40B0254A238E009DA63C /* TextFieldWithLabel.swift */,
+				CBDB69FF2556FF3A0010443A /* OptionsPickerIcon.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				CBBC80BF25489FAC00D19BFF /* IperfRunner.swift in Sources */,
 				CBBC80AB25489EDB00D19BFF /* iperf_client_api.c in Sources */,
 				CBCA40B7254A267F009DA63C /* MoreSettingsView.swift in Sources */,
+				CBDB6A002556FF3A0010443A /* OptionsPickerIcon.swift in Sources */,
 				CBBC80AC25489EDB00D19BFF /* iperf_error.c in Sources */,
 				CBBC80B025489EDB00D19BFF /* iperf_tcp.c in Sources */,
 				CBCA40AD2549FEF7009DA63C /* StartButton.swift in Sources */,

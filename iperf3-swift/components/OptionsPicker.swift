@@ -31,21 +31,8 @@ struct OptionsPicker: View {
     }
 }
 
-struct OptionsPickerIcon: View {
-    let backgroundColor: Color
-    let uiImage: String?
-    let text: String
-    
-    var body: some View {
-        ZStack {
-            if let uiImage = uiImage {
-                Image(systemName: uiImage).padding(0)
-            } else {
-                Text(text).padding(0)
-            }
-        }
-        .frame(height: barButtonHeight)
-        .padding(10)
-        .background(backgroundColor)
+struct OptionsPicker_Previews: PreviewProvider {
+    static var previews: some View {
+        OptionsPicker(options: protocolOptions, selected: .constant(0))
     }
 }
