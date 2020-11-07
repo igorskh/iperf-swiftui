@@ -29,6 +29,6 @@ struct ResultsView_Previews: PreviewProvider {
             IperfIntervalResult(),
             IperfIntervalResult()
         ]
-        ResultsView(results: .constant(results))
+        return ResultsView(results: .constant(results))
     }
 }

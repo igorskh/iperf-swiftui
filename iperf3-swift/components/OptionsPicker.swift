@@ -34,6 +34,6 @@ struct OptionsPicker: View {
 struct OptionsPicker_Previews: PreviewProvider {
     static var previews: some View {
         let formInput = IperfConfigurationInput(address: "")
-        OptionsPicker(options: formInput.protocolOptions, selected: .constant(0))
+        return OptionsPicker(options: formInput.protocolOptions, selected: .constant(0))
     }
 }

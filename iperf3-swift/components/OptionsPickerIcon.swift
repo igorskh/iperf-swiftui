@@ -28,7 +28,9 @@ struct OptionsPickerIcon: View {
 
 struct OptionsPickerIcon_Previews: PreviewProvider {
     static var previews: some View {
-        OptionsPickerIcon(backgroundColor: .white, uiImage: nil, text: "Test")
-        OptionsPickerIcon(backgroundColor: .white, uiImage: "circle", text: "Test")
+        Group {
+            OptionsPickerIcon(backgroundColor: .white, uiImage: nil, text: "Test")
+            OptionsPickerIcon(backgroundColor: .white, uiImage: "circle", text: "Test")
+        }
     }
 }
