@@ -125,7 +125,7 @@ struct IperfConfiguration {
     var port = 5201
     var prot = IperfProtocol.tcp
     
-    var rate: Int32 = UDP_RATE
+    var rate: UInt64 = UInt64(UDP_RATE)
     
     var duration: TimeInterval?
     var timeout: TimeInterval?

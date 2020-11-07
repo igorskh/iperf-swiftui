@@ -61,7 +61,7 @@ extension IperfConfiguration {
         reverse = input.direction
         prot = input.prot
         
-        if let v = Int32(input.rate.value) {
+        if let v = UInt64(input.rate.value) {
             rate = v
             if input.rate.option == .Kbps {
                 rate *= 1024
