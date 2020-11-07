@@ -10,24 +10,16 @@ import SwiftUI
 let barButtonHeight: CGFloat = 16.0
 
 struct ContentView: View {
-    private let roleOptions: [IperfRole] = [.client, .server]
-    private let directionOptions: [IperfDirection] = [.download, .upload]
     private var iperfRunner: IperfRunner = IperfRunner()
+    @State var runnerState: IperfRunnerState = .ready
 
     @State var debugDescription: String = ""
     @State var displayError: Bool = false
-    
-    @State var roleIndex: Int = 0
-    @State var directionIndex: Int = 0
-    
     @State var results: [IperfIntervalResult] = []
-    
     @State var formInput = IperfConfigurationInput(
         address: "127.0.0.1",
         port: "5201"
     )
-    
-    @State var runnerState: IperfRunnerState = .ready
     
     func onResultReceived(result: IperfIntervalResult) {
         if result.runnerState != .unknown && result.runnerState != runnerState {
@@ -42,7 +34,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("iPerf3 \(roleOptions[roleIndex].description)")
+            Text("iPerf3 \(formInput.role.description)")
                 .font(.largeTitle)
             
             HStack {
@@ -54,16 +46,14 @@ struct ContentView: View {
             
             HStack {
                 OptionsPicker(
-                    options: roleOptions,
-                    selected: $roleIndex,
-                    onChange: { index in formInput.role = roleOptions[index] }
+                    options: formInput.roleOptions,
+                    selected: $formInput.roleIndex
                 )
                 
-                if roleOptions[roleIndex] == .client {
+                if formInput.role == .client {
                     OptionsPicker(
-                        options: directionOptions,
-                        selected: $directionIndex,
-                        onChange: { index in formInput.direction = directionOptions[directionIndex] }
+                        options: formInput.directionOptions,
+                        selected: $formInput.directionIndex
                     )
                 }
                 MoreSettingsView(formInput: $formInput)

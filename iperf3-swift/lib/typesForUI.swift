@@ -49,9 +49,23 @@ struct IperfConfigurationInput {
     var rate: StringWithOption<RateOption> = StringWithOption<RateOption>(value: "1", option: .Mbps, optionIndex: 1)
     var reportInterval: String = "1"
     
-    var prot: IperfProtocol = .tcp
-    var role: IperfRole = .client
-    var direction: IperfDirection = .download
+    var prot: IperfProtocol {
+        protocolOptions[protocolIndex]
+    }
+    var role: IperfRole {
+        roleOptions[roleIndex]
+    }
+    var direction: IperfDirection {
+        directionOptions[directionIndex]
+    }
+    
+    var roleOptions: [IperfRole] = [.client, .server]
+    var directionOptions: [IperfDirection] = [.download, .upload]
+    var protocolOptions: [IperfProtocol] = [.tcp, .udp]
+    
+    var protocolIndex: Int = 0
+    var roleIndex: Int = 0
+    var directionIndex: Int = 0
 }
 
 extension IperfConfiguration {

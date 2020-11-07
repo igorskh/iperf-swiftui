@@ -7,14 +7,11 @@
 
 import SwiftUI
 
-let protocolOptions: [IperfProtocol] = [.tcp, .udp]
 let rateOptions: [RateOption] = [.Kbps, .Mbps, .Gbps]
 
 struct MoreSettingsView: View {
     @State var isPresented: Bool = false
     @Binding var formInput: IperfConfigurationInput
-    
-    @State var protocolIndex: Int = 0
     
     var body: some View {
         Button(action: { isPresented = true }) {
@@ -34,9 +31,8 @@ struct MoreSettingsView: View {
                                 Text("Protocol")
                                 Spacer()
                                 OptionsPicker(
-                                    options: protocolOptions,
-                                    selected: $protocolIndex,
-                                    onChange: { index in formInput.prot = protocolOptions[protocolIndex] }
+                                    options: formInput.protocolOptions,
+                                    selected: $formInput.protocolIndex
                                 )
                             }
                         }
@@ -59,11 +55,6 @@ struct MoreSettingsView: View {
                 .navigationBarItems(trailing: Button("Done") { isPresented = false} )
             }
             .navigationViewStyle(StackNavigationViewStyle())
-        }
-        .onAppear {
-            if let index = protocolOptions.firstIndex(of: formInput.prot) {
-                protocolIndex = index
-            }
         }
     }
 }
