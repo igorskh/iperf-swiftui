@@ -8,6 +8,7 @@
 import SwiftUI
 
 let protocolOptions: [IperfProtocol] = [.tcp, .udp]
+let rateOptions: [RateOption] = [.Kbps, .Mbps, .Gbps]
 
 struct MoreSettingsView: View {
     @State var isPresented: Bool = false
@@ -29,24 +30,27 @@ struct MoreSettingsView: View {
                 Form {
                     if formInput.role == .client {
                         Section {
-                            OptionsPicker(
-                                options: protocolOptions,
-                                selected: $protocolIndex,
-                                onChange: { index in formInput.prot = protocolOptions[protocolIndex] }
-                            )
-                            
+                            HStack {
+                                Text("Protocol")
+                                Spacer()
+                                OptionsPicker(
+                                    options: protocolOptions,
+                                    selected: $protocolIndex,
+                                    onChange: { index in formInput.prot = protocolOptions[protocolIndex] }
+                                )
+                            }
                         }
                         Section {
                             TextFieldWithLabel(label: "Duration", text: $formInput.duration)
                             if formInput.prot == .tcp {
                                 TextFieldWithLabel(label: "Streams", text: $formInput.nofStreams)
                             }
-//                            TextFieldWithLabel(label: "Type Of Service", text: $formInput.tos)
                             if formInput.prot == .udp {
                                 TextFieldWithOption(label: "Rate", value: $formInput.rate, options: rateOptions)
                             }
                         }
                     }
+                    
                     Section {
                         TextFieldWithLabel(label: "Reporting Interval", text: $formInput.reportInterval)
                     }

@@ -39,7 +39,6 @@ enum RateOption: TextFieldOption {
         return rawValue
     }
 }
-let rateOptions: [RateOption] = [.Kbps, .Mbps, .Gbps]
 
 struct IperfConfigurationInput {
     var address: String
