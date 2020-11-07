@@ -13,6 +13,7 @@ protocol HasDescription {
 }
 
 enum IperfRunnerState {
+    case unknown
     case ready
     case initialising
     case running
@@ -226,6 +227,7 @@ struct IperfStreamIntervalResult {
 
 struct IperfIntervalResult: Identifiable {
     var id = UUID()
+    var runnerState: IperfRunnerState = .unknown
     
     var streams: [IperfStreamIntervalResult] = []
     

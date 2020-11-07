@@ -7,13 +7,16 @@
 
 import Foundation
 
-class IperfRunner: ObservableObject {
+class IperfRunner {
     private var configuration: IperfConfiguration = IperfConfiguration()
     private var callbackFunction: (_ status: IperfIntervalResult) -> Void = {result in }
     private var observer: NSObjectProtocol? = nil
     private var test: UnsafeMutablePointer<iperf_test>? = nil
-    
-    @Published var state: IperfRunnerState = .ready
+    private var state: IperfRunnerState = .ready {
+        willSet {
+            callbackFunction(IperfIntervalResult(runnerState: newValue))
+        }
+    }
     
     // MARK: Initialisers
     init() { }

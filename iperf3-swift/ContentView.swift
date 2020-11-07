@@ -12,6 +12,7 @@ let barButtonHeight: CGFloat = 16.0
 struct ContentView: View {
     private let roleOptions: [IperfRole] = [.client, .server]
     private let directionOptions: [IperfDirection] = [.download, .upload]
+    private var iperfRunner: IperfRunner = IperfRunner()
 
     @State var debugDescription: String = ""
     @State var displayError: Bool = false
@@ -26,9 +27,12 @@ struct ContentView: View {
         port: "5201"
     )
     
-    @ObservedObject private var iperfRunner: IperfRunner = IperfRunner()
+    @State var runnerState: IperfRunnerState = .ready
     
     func onResultReceived(result: IperfIntervalResult) {
+        if result.runnerState != .unknown && result.runnerState != runnerState {
+            runnerState = result.runnerState
+        }
         if result.streams.count > 0 {
             results.append(result)
         }
@@ -66,7 +70,7 @@ struct ContentView: View {
                 Spacer()
                 
                 StartButton(
-                    state: $iperfRunner.state,
+                    state: $runnerState,
                     onStartClick: {
                         results = []
                         debugDescription = ""

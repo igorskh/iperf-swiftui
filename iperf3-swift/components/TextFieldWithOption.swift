@@ -14,12 +14,12 @@ struct TextFieldWithOption<T>: View where T: TextFieldOption {
     var options: [T]
     
     var body: some View {
-        HStack {
-            Text(label)
-            Spacer()
-            TextField(label, text: $value.value)
-                .multilineTextAlignment(.trailing)
-                .keyboardType(keyboardType)
+        VStack {
+            TextFieldWithLabel(
+                label: label,
+                text: $value.value,
+                keyboardType: keyboardType
+            )
             OptionsPicker(
                 options: options,
                 selected: $value.optionIndex,
