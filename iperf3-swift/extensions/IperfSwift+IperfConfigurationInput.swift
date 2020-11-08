@@ -4,41 +4,9 @@
 //
 //  Created by Igor Kim on 28.10.20.
 //
-
 import Foundation
 
-protocol TextFieldOption: HasDescription {
-    var rawValue: String { get }
-}
-
-struct StringWithOption<T> {
-    var value: String
-    var option: T
-    var optionIndex: Int
-}
-
-enum RateOption: TextFieldOption {
-    case Kbps
-    case Mbps
-    case Gbps
-    
-    var rawValue: String {
-        switch self {
-        case .Kbps:
-            return "Kbps"
-        case .Mbps:
-            return "Mbps"
-        case .Gbps:
-            return "Gbps"
-        }
-    }
-    var uiImage: String? {
-        return nil
-    }
-    var description: String {
-        return rawValue
-    }
-}
+import IperfSwift
 
 struct IperfConfigurationInput {
     var address: String
@@ -70,6 +38,8 @@ struct IperfConfigurationInput {
 
 extension IperfConfiguration {
     init(_ input: IperfConfigurationInput) {
+        self.init()
+        
         address = input.address
         role = input.role
         reverse = input.direction

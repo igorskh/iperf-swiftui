@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import IperfSwift
+
 struct ResultsView: View {
     @Binding var results: [IperfIntervalResult]
     

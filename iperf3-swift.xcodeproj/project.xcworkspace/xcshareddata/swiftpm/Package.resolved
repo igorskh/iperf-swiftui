@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "IperfSwift",
+        "repositoryURL": "/Volumes/MacSSD/Dev/xcode/iperf-swift",
+        "state": {
+          "branch": "main",
+          "revision": "3f997b508d3ec526844c13944aee55062fcfb1ac",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

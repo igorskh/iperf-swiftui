@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import IperfSwift
+
 struct StartButton: View {
     @Binding var state: IperfRunnerState
     

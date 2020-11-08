@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB5A78A02548E81C0003F4F7 /* types.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A789F2548E81C0003F4F7 /* types.swift */; };
+		CB7026792558287E00BCC15F /* IperfSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB7026782558287E00BCC15F /* IperfSwift */; };
+		CB702682255828EF00BCC15F /* IperfSwift+HasDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB702681255828EF00BCC15F /* IperfSwift+HasDescription.swift */; };
+		CB702688255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB702687255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift */; };
+		CB70269425582C9600BCC15F /* RateOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB70269325582C9600BCC15F /* RateOption.swift */; };
 		CB9624292556C86300E096F6 /* TextFieldWithOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9624282556C86300E096F6 /* TextFieldWithOption.swift */; };
 		CBBC806D25489E9C00D19BFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC806C25489E9C00D19BFF /* AppDelegate.swift */; };
 		CBBC806F25489E9C00D19BFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC806E25489E9C00D19BFF /* SceneDelegate.swift */; };
@@ -15,25 +18,6 @@
 		CBBC807325489E9E00D19BFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBC807225489E9E00D19BFF /* Assets.xcassets */; };
 		CBBC807625489E9E00D19BFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBC807525489E9E00D19BFF /* Preview Assets.xcassets */; };
 		CBBC807925489E9E00D19BFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBC807725489E9E00D19BFF /* LaunchScreen.storyboard */; };
-		CBBC80A725489EDB00D19BFF /* cjson.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC808225489EDB00D19BFF /* cjson.c */; };
-		CBBC80A825489EDB00D19BFF /* dscp.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC808425489EDB00D19BFF /* dscp.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		CBBC80A925489EDB00D19BFF /* iperf_api.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC808725489EDB00D19BFF /* iperf_api.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		CBBC80AA25489EDB00D19BFF /* iperf_auth.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC808925489EDB00D19BFF /* iperf_auth.c */; };
-		CBBC80AB25489EDB00D19BFF /* iperf_client_api.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC808B25489EDB00D19BFF /* iperf_client_api.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		CBBC80AC25489EDB00D19BFF /* iperf_error.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC808D25489EDB00D19BFF /* iperf_error.c */; };
-		CBBC80AD25489EDB00D19BFF /* iperf_locale.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC808E25489EDB00D19BFF /* iperf_locale.c */; };
-		CBBC80AE25489EDB00D19BFF /* iperf_sctp.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809025489EDB00D19BFF /* iperf_sctp.c */; };
-		CBBC80AF25489EDB00D19BFF /* iperf_server_api.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809225489EDB00D19BFF /* iperf_server_api.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		CBBC80B025489EDB00D19BFF /* iperf_tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809325489EDB00D19BFF /* iperf_tcp.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		CBBC80B125489EDB00D19BFF /* iperf_time.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809525489EDB00D19BFF /* iperf_time.c */; };
-		CBBC80B225489EDB00D19BFF /* iperf_udp.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809725489EDB00D19BFF /* iperf_udp.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		CBBC80B325489EDB00D19BFF /* iperf_util.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809925489EDB00D19BFF /* iperf_util.c */; };
-		CBBC80B425489EDB00D19BFF /* net.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809B25489EDB00D19BFF /* net.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		CBBC80B525489EDB00D19BFF /* tcp_info.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC809F25489EDB00D19BFF /* tcp_info.c */; };
-		CBBC80B625489EDB00D19BFF /* tcp_window_size.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC80A025489EDB00D19BFF /* tcp_window_size.c */; };
-		CBBC80B725489EDB00D19BFF /* timer.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC80A225489EDB00D19BFF /* timer.c */; };
-		CBBC80B825489EDB00D19BFF /* units.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBC80A425489EDB00D19BFF /* units.c */; };
-		CBBC80BF25489FAC00D19BFF /* IperfRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC80BE25489FAC00D19BFF /* IperfRunner.swift */; };
 		CBCA40A92549FECB009DA63C /* OptionsPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40A82549FECB009DA63C /* OptionsPicker.swift */; };
 		CBCA40AD2549FEF7009DA63C /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40AC2549FEF7009DA63C /* StartButton.swift */; };
 		CBCA40B1254A238E009DA63C /* TextFieldWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40B0254A238E009DA63C /* TextFieldWithLabel.swift */; };
@@ -42,8 +26,6 @@
 		CBDB6A002556FF3A0010443A /* OptionsPickerIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB69FF2556FF3A0010443A /* OptionsPickerIcon.swift */; };
 		CBDB6A0A255753480010443A /* iperf3_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB6A09255753480010443A /* iperf3_swiftTests.swift */; };
 		CBDB6A1625575F910010443A /* iperf3_runnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB6A1525575F910010443A /* iperf3_runnerTests.swift */; };
-		CBF726B2254968BE002F5354 /* typesForUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF726B1254968BE002F5354 /* typesForUI.swift */; };
-		CBF726B525497A78002F5354 /* errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF726B425497A78002F5354 /* errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB5A789F2548E81C0003F4F7 /* types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = types.swift; sourceTree = "<group>"; };
+		CB702681255828EF00BCC15F /* IperfSwift+HasDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IperfSwift+HasDescription.swift"; sourceTree = "<group>"; };
+		CB702687255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IperfSwift+IperfConfigurationInput.swift"; sourceTree = "<group>"; };
+		CB70269325582C9600BCC15F /* RateOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateOption.swift; sourceTree = "<group>"; };
 		CB9624282556C86300E096F6 /* TextFieldWithOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithOption.swift; sourceTree = "<group>"; };
 		CBBC806925489E9C00D19BFF /* iperf3-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iperf3-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBC806C25489E9C00D19BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,45 +51,6 @@
 		CBBC807525489E9E00D19BFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CBBC807825489E9E00D19BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBBC807A25489E9E00D19BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBBC808225489EDB00D19BFF /* cjson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cjson.c; sourceTree = "<group>"; };
-		CBBC808325489EDB00D19BFF /* cjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cjson.h; sourceTree = "<group>"; };
-		CBBC808425489EDB00D19BFF /* dscp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dscp.c; sourceTree = "<group>"; };
-		CBBC808525489EDB00D19BFF /* flowlabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flowlabel.h; sourceTree = "<group>"; };
-		CBBC808625489EDB00D19BFF /* iperf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf.h; sourceTree = "<group>"; };
-		CBBC808725489EDB00D19BFF /* iperf_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_api.c; sourceTree = "<group>"; };
-		CBBC808825489EDB00D19BFF /* iperf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_api.h; sourceTree = "<group>"; };
-		CBBC808925489EDB00D19BFF /* iperf_auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_auth.c; sourceTree = "<group>"; };
-		CBBC808A25489EDB00D19BFF /* iperf_auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_auth.h; sourceTree = "<group>"; };
-		CBBC808B25489EDB00D19BFF /* iperf_client_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_client_api.c; sourceTree = "<group>"; };
-		CBBC808C25489EDB00D19BFF /* iperf_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_config.h; sourceTree = "<group>"; };
-		CBBC808D25489EDB00D19BFF /* iperf_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_error.c; sourceTree = "<group>"; };
-		CBBC808E25489EDB00D19BFF /* iperf_locale.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_locale.c; sourceTree = "<group>"; };
-		CBBC808F25489EDB00D19BFF /* iperf_locale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_locale.h; sourceTree = "<group>"; };
-		CBBC809025489EDB00D19BFF /* iperf_sctp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_sctp.c; sourceTree = "<group>"; };
-		CBBC809125489EDB00D19BFF /* iperf_sctp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_sctp.h; sourceTree = "<group>"; };
-		CBBC809225489EDB00D19BFF /* iperf_server_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_server_api.c; sourceTree = "<group>"; };
-		CBBC809325489EDB00D19BFF /* iperf_tcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_tcp.c; sourceTree = "<group>"; };
-		CBBC809425489EDB00D19BFF /* iperf_tcp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_tcp.h; sourceTree = "<group>"; };
-		CBBC809525489EDB00D19BFF /* iperf_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_time.c; sourceTree = "<group>"; };
-		CBBC809625489EDB00D19BFF /* iperf_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_time.h; sourceTree = "<group>"; };
-		CBBC809725489EDB00D19BFF /* iperf_udp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_udp.c; sourceTree = "<group>"; };
-		CBBC809825489EDB00D19BFF /* iperf_udp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_udp.h; sourceTree = "<group>"; };
-		CBBC809925489EDB00D19BFF /* iperf_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_util.c; sourceTree = "<group>"; };
-		CBBC809A25489EDB00D19BFF /* iperf_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_util.h; sourceTree = "<group>"; };
-		CBBC809B25489EDB00D19BFF /* net.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net.c; sourceTree = "<group>"; };
-		CBBC809C25489EDB00D19BFF /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net.h; sourceTree = "<group>"; };
-		CBBC809D25489EDB00D19BFF /* portable_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portable_endian.h; sourceTree = "<group>"; };
-		CBBC809E25489EDB00D19BFF /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
-		CBBC809F25489EDB00D19BFF /* tcp_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcp_info.c; sourceTree = "<group>"; };
-		CBBC80A025489EDB00D19BFF /* tcp_window_size.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcp_window_size.c; sourceTree = "<group>"; };
-		CBBC80A125489EDB00D19BFF /* tcp_window_size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcp_window_size.h; sourceTree = "<group>"; };
-		CBBC80A225489EDB00D19BFF /* timer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = timer.c; sourceTree = "<group>"; };
-		CBBC80A325489EDB00D19BFF /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
-		CBBC80A425489EDB00D19BFF /* units.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = units.c; sourceTree = "<group>"; };
-		CBBC80A525489EDB00D19BFF /* units.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = units.h; sourceTree = "<group>"; };
-		CBBC80A625489EDB00D19BFF /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
-		CBBC80BA25489F1200D19BFF /* Iperf-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Iperf-Bridging-Header.h"; sourceTree = "<group>"; };
-		CBBC80BE25489FAC00D19BFF /* IperfRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IperfRunner.swift; sourceTree = "<group>"; };
 		CBBC80C12548A40E00D19BFF /* iperf3-swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iperf3-swift.entitlements"; sourceTree = "<group>"; };
 		CBCA40A82549FECB009DA63C /* OptionsPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsPicker.swift; sourceTree = "<group>"; };
 		CBCA40AC2549FEF7009DA63C /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
@@ -117,8 +62,6 @@
 		CBDB6A09255753480010443A /* iperf3_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iperf3_swiftTests.swift; sourceTree = "<group>"; };
 		CBDB6A0B255753480010443A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBDB6A1525575F910010443A /* iperf3_runnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iperf3_runnerTests.swift; sourceTree = "<group>"; };
-		CBF726B1254968BE002F5354 /* typesForUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typesForUI.swift; sourceTree = "<group>"; };
-		CBF726B425497A78002F5354 /* errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB7026792558287E00BCC15F /* IperfSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,29 +83,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CB1F32D425544EAD0009DC0E /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				CBBC808125489EDB00D19BFF /* iperf3 */,
-				CBBC80BA25489F1200D19BFF /* Iperf-Bridging-Header.h */,
-				CBBC80BE25489FAC00D19BFF /* IperfRunner.swift */,
-				CB5A789F2548E81C0003F4F7 /* types.swift */,
-				CBF726B1254968BE002F5354 /* typesForUI.swift */,
-				CBF726B425497A78002F5354 /* errors.swift */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
 		CB1F32D825544F2F0009DC0E /* components */ = {
 			isa = PBXGroup;
 			children = (
 				CBCA40A82549FECB009DA63C /* OptionsPicker.swift */,
 				CBCA40AC2549FEF7009DA63C /* StartButton.swift */,
+				CB70269325582C9600BCC15F /* RateOption.swift */,
 				CB9624282556C86300E096F6 /* TextFieldWithOption.swift */,
 				CBCA40B0254A238E009DA63C /* TextFieldWithLabel.swift */,
 				CBDB69FF2556FF3A0010443A /* OptionsPickerIcon.swift */,
 			);
 			path = components;
+			sourceTree = "<group>";
+		};
+		CB702680255828E300BCC15F /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB702681255828EF00BCC15F /* IperfSwift+HasDescription.swift */,
+				CB702687255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		CBBC806025489E9C00D19BFF = {
@@ -185,8 +126,8 @@
 		CBBC806B25489E9C00D19BFF /* iperf3-swift */ = {
 			isa = PBXGroup;
 			children = (
+				CB702680255828E300BCC15F /* extensions */,
 				CB1F32D825544F2F0009DC0E /* components */,
-				CB1F32D425544EAD0009DC0E /* lib */,
 				CBCA40A72549FEBC009DA63C /* views */,
 				CBBC80C12548A40E00D19BFF /* iperf3-swift.entitlements */,
 				CBBC806C25489E9C00D19BFF /* AppDelegate.swift */,
@@ -206,50 +147,6 @@
 				CBBC807525489E9E00D19BFF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		CBBC808125489EDB00D19BFF /* iperf3 */ = {
-			isa = PBXGroup;
-			children = (
-				CBBC808225489EDB00D19BFF /* cjson.c */,
-				CBBC808325489EDB00D19BFF /* cjson.h */,
-				CBBC808425489EDB00D19BFF /* dscp.c */,
-				CBBC808525489EDB00D19BFF /* flowlabel.h */,
-				CBBC808625489EDB00D19BFF /* iperf.h */,
-				CBBC808725489EDB00D19BFF /* iperf_api.c */,
-				CBBC808825489EDB00D19BFF /* iperf_api.h */,
-				CBBC808925489EDB00D19BFF /* iperf_auth.c */,
-				CBBC808A25489EDB00D19BFF /* iperf_auth.h */,
-				CBBC808B25489EDB00D19BFF /* iperf_client_api.c */,
-				CBBC808C25489EDB00D19BFF /* iperf_config.h */,
-				CBBC808D25489EDB00D19BFF /* iperf_error.c */,
-				CBBC808E25489EDB00D19BFF /* iperf_locale.c */,
-				CBBC808F25489EDB00D19BFF /* iperf_locale.h */,
-				CBBC809025489EDB00D19BFF /* iperf_sctp.c */,
-				CBBC809125489EDB00D19BFF /* iperf_sctp.h */,
-				CBBC809225489EDB00D19BFF /* iperf_server_api.c */,
-				CBBC809325489EDB00D19BFF /* iperf_tcp.c */,
-				CBBC809425489EDB00D19BFF /* iperf_tcp.h */,
-				CBBC809525489EDB00D19BFF /* iperf_time.c */,
-				CBBC809625489EDB00D19BFF /* iperf_time.h */,
-				CBBC809725489EDB00D19BFF /* iperf_udp.c */,
-				CBBC809825489EDB00D19BFF /* iperf_udp.h */,
-				CBBC809925489EDB00D19BFF /* iperf_util.c */,
-				CBBC809A25489EDB00D19BFF /* iperf_util.h */,
-				CBBC809B25489EDB00D19BFF /* net.c */,
-				CBBC809C25489EDB00D19BFF /* net.h */,
-				CBBC809D25489EDB00D19BFF /* portable_endian.h */,
-				CBBC809E25489EDB00D19BFF /* queue.h */,
-				CBBC809F25489EDB00D19BFF /* tcp_info.c */,
-				CBBC80A025489EDB00D19BFF /* tcp_window_size.c */,
-				CBBC80A125489EDB00D19BFF /* tcp_window_size.h */,
-				CBBC80A225489EDB00D19BFF /* timer.c */,
-				CBBC80A325489EDB00D19BFF /* timer.h */,
-				CBBC80A425489EDB00D19BFF /* units.c */,
-				CBBC80A525489EDB00D19BFF /* units.h */,
-				CBBC80A625489EDB00D19BFF /* version.h */,
-			);
-			path = iperf3;
 			sourceTree = "<group>";
 		};
 		CBCA40A72549FEBC009DA63C /* views */ = {
@@ -287,6 +184,9 @@
 			dependencies = (
 			);
 			name = "iperf3-swift";
+			packageProductDependencies = (
+				CB7026782558287E00BCC15F /* IperfSwift */,
+			);
 			productName = "iperf3-swift";
 			productReference = CBBC806925489E9C00D19BFF /* iperf3-swift.app */;
 			productType = "com.apple.product-type.application";
@@ -336,6 +236,9 @@
 				Base,
 			);
 			mainGroup = CBBC806025489E9C00D19BFF;
+			packageReferences = (
+				CB7026772558287E00BCC15F /* XCRemoteSwiftPackageReference "iperf-swift" */,
+			);
 			productRefGroup = CBBC806A25489E9C00D19BFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -371,38 +274,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBBC80B825489EDB00D19BFF /* units.c in Sources */,
-				CBBC80B325489EDB00D19BFF /* iperf_util.c in Sources */,
-				CBBC80BF25489FAC00D19BFF /* IperfRunner.swift in Sources */,
-				CBBC80AB25489EDB00D19BFF /* iperf_client_api.c in Sources */,
+				CB70269425582C9600BCC15F /* RateOption.swift in Sources */,
 				CBCA40B7254A267F009DA63C /* MoreSettingsView.swift in Sources */,
 				CBDB6A002556FF3A0010443A /* OptionsPickerIcon.swift in Sources */,
-				CBBC80AC25489EDB00D19BFF /* iperf_error.c in Sources */,
-				CBBC80B025489EDB00D19BFF /* iperf_tcp.c in Sources */,
 				CBCA40AD2549FEF7009DA63C /* StartButton.swift in Sources */,
 				CBCA40A92549FECB009DA63C /* OptionsPicker.swift in Sources */,
-				CBBC80AD25489EDB00D19BFF /* iperf_locale.c in Sources */,
-				CBBC80A825489EDB00D19BFF /* dscp.c in Sources */,
 				CBBC806D25489E9C00D19BFF /* AppDelegate.swift in Sources */,
-				CBBC80B225489EDB00D19BFF /* iperf_udp.c in Sources */,
-				CB5A78A02548E81C0003F4F7 /* types.swift in Sources */,
-				CBBC80A725489EDB00D19BFF /* cjson.c in Sources */,
-				CBBC80AA25489EDB00D19BFF /* iperf_auth.c in Sources */,
-				CBBC80B425489EDB00D19BFF /* net.c in Sources */,
 				CBCA40B1254A238E009DA63C /* TextFieldWithLabel.swift in Sources */,
-				CBBC80A925489EDB00D19BFF /* iperf_api.c in Sources */,
-				CBBC80AF25489EDB00D19BFF /* iperf_server_api.c in Sources */,
 				CBBC806F25489E9C00D19BFF /* SceneDelegate.swift in Sources */,
-				CBF726B525497A78002F5354 /* errors.swift in Sources */,
+				CB702688255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift in Sources */,
 				CB9624292556C86300E096F6 /* TextFieldWithOption.swift in Sources */,
-				CBBC80B625489EDB00D19BFF /* tcp_window_size.c in Sources */,
-				CBBC80B125489EDB00D19BFF /* iperf_time.c in Sources */,
-				CBBC80B525489EDB00D19BFF /* tcp_info.c in Sources */,
 				CBCA40B4254A2668009DA63C /* ResultsView.swift in Sources */,
-				CBBC80B725489EDB00D19BFF /* timer.c in Sources */,
-				CBF726B2254968BE002F5354 /* typesForUI.swift in Sources */,
+				CB702682255828EF00BCC15F /* IperfSwift+HasDescription.swift in Sources */,
 				CBBC807125489E9C00D19BFF /* ContentView.swift in Sources */,
-				CBBC80AE25489EDB00D19BFF /* iperf_sctp.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +378,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "iperf3-swift/lib/Iperf-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -549,7 +432,6 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OBJC_BRIDGING_HEADER = "iperf3-swift/lib/Iperf-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -672,6 +554,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB7026772558287E00BCC15F /* XCRemoteSwiftPackageReference "iperf-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "file://../iperf-swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB7026782558287E00BCC15F /* IperfSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB7026772558287E00BCC15F /* XCRemoteSwiftPackageReference "iperf-swift" */;
+			productName = IperfSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CBBC806125489E9C00D19BFF /* Project object */;
 }

@@ -9,6 +9,8 @@ import XCTest
 
 @testable import iperf3_swift
 
+import IperfSwift
+
 class iperf3_swiftTests: XCTestCase {
     private var formInput: IperfConfigurationInput = IperfConfigurationInput(address: "127.0.0.1")
 

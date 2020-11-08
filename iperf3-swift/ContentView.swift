@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import IperfSwift
 
 let barButtonHeight: CGFloat = 16.0
 
