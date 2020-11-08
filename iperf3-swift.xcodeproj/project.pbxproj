@@ -40,9 +40,21 @@
 		CBCA40B4254A2668009DA63C /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40B3254A2668009DA63C /* ResultsView.swift */; };
 		CBCA40B7254A267F009DA63C /* MoreSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40B6254A267F009DA63C /* MoreSettingsView.swift */; };
 		CBDB6A002556FF3A0010443A /* OptionsPickerIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB69FF2556FF3A0010443A /* OptionsPickerIcon.swift */; };
+		CBDB6A0A255753480010443A /* iperf3_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB6A09255753480010443A /* iperf3_swiftTests.swift */; };
+		CBDB6A1625575F910010443A /* iperf3_runnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB6A1525575F910010443A /* iperf3_runnerTests.swift */; };
 		CBF726B2254968BE002F5354 /* typesForUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF726B1254968BE002F5354 /* typesForUI.swift */; };
 		CBF726B525497A78002F5354 /* errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF726B425497A78002F5354 /* errors.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBDB6A0C255753480010443A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBBC806125489E9C00D19BFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBBC806825489E9C00D19BFF;
+			remoteInfo = "iperf3-swift";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CB5A789F2548E81C0003F4F7 /* types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = types.swift; sourceTree = "<group>"; };
@@ -101,12 +113,23 @@
 		CBCA40B3254A2668009DA63C /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		CBCA40B6254A267F009DA63C /* MoreSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSettingsView.swift; sourceTree = "<group>"; };
 		CBDB69FF2556FF3A0010443A /* OptionsPickerIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsPickerIcon.swift; sourceTree = "<group>"; };
+		CBDB6A07255753480010443A /* iperf3-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iperf3-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBDB6A09255753480010443A /* iperf3_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iperf3_swiftTests.swift; sourceTree = "<group>"; };
+		CBDB6A0B255753480010443A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBDB6A1525575F910010443A /* iperf3_runnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iperf3_runnerTests.swift; sourceTree = "<group>"; };
 		CBF726B1254968BE002F5354 /* typesForUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typesForUI.swift; sourceTree = "<group>"; };
 		CBF726B425497A78002F5354 /* errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CBBC806625489E9C00D19BFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDB6A04255753480010443A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -145,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				CBBC806B25489E9C00D19BFF /* iperf3-swift */,
+				CBDB6A08255753480010443A /* iperf3-swiftTests */,
 				CBBC806A25489E9C00D19BFF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -153,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				CBBC806925489E9C00D19BFF /* iperf3-swift.app */,
+				CBDB6A07255753480010443A /* iperf3-swiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,6 +261,16 @@
 			path = views;
 			sourceTree = "<group>";
 		};
+		CBDB6A08255753480010443A /* iperf3-swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBDB6A09255753480010443A /* iperf3_swiftTests.swift */,
+				CBDB6A1525575F910010443A /* iperf3_runnerTests.swift */,
+				CBDB6A0B255753480010443A /* Info.plist */,
+			);
+			path = "iperf3-swiftTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,6 +291,24 @@
 			productReference = CBBC806925489E9C00D19BFF /* iperf3-swift.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CBDB6A06255753480010443A /* iperf3-swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBDB6A0E255753480010443A /* Build configuration list for PBXNativeTarget "iperf3-swiftTests" */;
+			buildPhases = (
+				CBDB6A03255753480010443A /* Sources */,
+				CBDB6A04255753480010443A /* Frameworks */,
+				CBDB6A05255753480010443A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBDB6A0D255753480010443A /* PBXTargetDependency */,
+			);
+			name = "iperf3-swiftTests";
+			productName = "iperf3-swiftTests";
+			productReference = CBDB6A07255753480010443A /* iperf3-swiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -267,6 +320,10 @@
 				TargetAttributes = {
 					CBBC806825489E9C00D19BFF = {
 						CreatedOnToolsVersion = 12.1;
+					};
+					CBDB6A06255753480010443A = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = CBBC806825489E9C00D19BFF;
 					};
 				};
 			};
@@ -284,6 +341,7 @@
 			projectRoot = "";
 			targets = (
 				CBBC806825489E9C00D19BFF /* iperf3-swift */,
+				CBDB6A06255753480010443A /* iperf3-swiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -296,6 +354,13 @@
 				CBBC807925489E9E00D19BFF /* LaunchScreen.storyboard in Resources */,
 				CBBC807625489E9E00D19BFF /* Preview Assets.xcassets in Resources */,
 				CBBC807325489E9E00D19BFF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDB6A05255753480010443A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +406,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBDB6A03255753480010443A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDB6A1625575F910010443A /* iperf3_runnerTests.swift in Sources */,
+				CBDB6A0A255753480010443A /* iperf3_swiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBDB6A0D255753480010443A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBBC806825489E9C00D19BFF /* iperf3-swift */;
+			targetProxy = CBDB6A0C255753480010443A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CBBC807725489E9E00D19BFF /* LaunchScreen.storyboard */ = {
@@ -519,6 +601,46 @@
 			};
 			name = Release;
 		};
+		CBDB6A0F255753480010443A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				INFOPLIST_FILE = "iperf3-swiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.iperf3-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iperf3-swift.app/iperf3-swift";
+			};
+			name = Debug;
+		};
+		CBDB6A10255753480010443A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				INFOPLIST_FILE = "iperf3-swiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.iperf3-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iperf3-swift.app/iperf3-swift";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -536,6 +658,15 @@
 			buildConfigurations = (
 				CBBC807E25489E9E00D19BFF /* Debug */,
 				CBBC807F25489E9E00D19BFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBDB6A0E255753480010443A /* Build configuration list for PBXNativeTarget "iperf3-swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBDB6A0F255753480010443A /* Debug */,
+				CBDB6A10255753480010443A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
