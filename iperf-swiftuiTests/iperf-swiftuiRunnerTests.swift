@@ -7,7 +7,7 @@
 
 import XCTest
 
-@testable import iperf3_swift
+@testable import iperf_swiftui
 
 import IperfSwift
 

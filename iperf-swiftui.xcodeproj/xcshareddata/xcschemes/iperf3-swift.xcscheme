@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CBBC806825489E9C00D19BFF"
-               BuildableName = "iperf3-swift.app"
-               BlueprintName = "iperf3-swift"
-               ReferencedContainer = "container:iperf3-swift.xcodeproj">
+               BuildableName = "iperf-swiftui.app"
+               BlueprintName = "iperf-swiftui"
+               ReferencedContainer = "container:iperf-swiftui.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CBDB6A06255753480010443A"
-               BuildableName = "iperf3-swiftTests.xctest"
-               BlueprintName = "iperf3-swiftTests"
-               ReferencedContainer = "container:iperf3-swift.xcodeproj">
+               BuildableName = "iperf-swiftuiTests.xctest"
+               BlueprintName = "iperf-swiftuiTests"
+               ReferencedContainer = "container:iperf-swiftui.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CBBC806825489E9C00D19BFF"
-            BuildableName = "iperf3-swift.app"
-            BlueprintName = "iperf3-swift"
-            ReferencedContainer = "container:iperf3-swift.xcodeproj">
+            BuildableName = "iperf-swiftui.app"
+            BlueprintName = "iperf-swiftui"
+            ReferencedContainer = "container:iperf-swiftui.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -73,9 +73,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CBBC806825489E9C00D19BFF"
-            BuildableName = "iperf3-swift.app"
-            BlueprintName = "iperf3-swift"
-            ReferencedContainer = "container:iperf3-swift.xcodeproj">
+            BuildableName = "iperf-swiftui.app"
+            BlueprintName = "iperf-swiftui"
+            ReferencedContainer = "container:iperf-swiftui.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

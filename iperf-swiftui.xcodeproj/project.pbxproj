@@ -24,8 +24,8 @@
 		CBCA40B4254A2668009DA63C /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40B3254A2668009DA63C /* ResultsView.swift */; };
 		CBCA40B7254A267F009DA63C /* MoreSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40B6254A267F009DA63C /* MoreSettingsView.swift */; };
 		CBDB6A002556FF3A0010443A /* OptionsPickerIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB69FF2556FF3A0010443A /* OptionsPickerIcon.swift */; };
-		CBDB6A0A255753480010443A /* iperf3_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB6A09255753480010443A /* iperf3_swiftTests.swift */; };
-		CBDB6A1625575F910010443A /* iperf3_runnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB6A1525575F910010443A /* iperf3_runnerTests.swift */; };
+		CBDB6A0A255753480010443A /* iperf-swiftuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB6A09255753480010443A /* iperf-swiftuiTests.swift */; };
+		CBDB6A1625575F910010443A /* iperf-swiftuiRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB6A1525575F910010443A /* iperf-swiftuiRunnerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		CB702687255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IperfSwift+IperfConfigurationInput.swift"; sourceTree = "<group>"; };
 		CB70269325582C9600BCC15F /* RateOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateOption.swift; sourceTree = "<group>"; };
 		CB9624282556C86300E096F6 /* TextFieldWithOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithOption.swift; sourceTree = "<group>"; };
-		CBBC806925489E9C00D19BFF /* iperf3-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iperf3-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBC806925489E9C00D19BFF /* iperf-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iperf-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBC806C25489E9C00D19BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBBC806E25489E9C00D19BFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CBBC807025489E9C00D19BFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,17 +51,17 @@
 		CBBC807525489E9E00D19BFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CBBC807825489E9E00D19BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBBC807A25489E9E00D19BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBBC80C12548A40E00D19BFF /* iperf3-swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iperf3-swift.entitlements"; sourceTree = "<group>"; };
+		CBBC80C12548A40E00D19BFF /* iperf-swiftui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iperf-swiftui.entitlements"; sourceTree = "<group>"; };
 		CBCA40A82549FECB009DA63C /* OptionsPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsPicker.swift; sourceTree = "<group>"; };
 		CBCA40AC2549FEF7009DA63C /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
 		CBCA40B0254A238E009DA63C /* TextFieldWithLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithLabel.swift; sourceTree = "<group>"; };
 		CBCA40B3254A2668009DA63C /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		CBCA40B6254A267F009DA63C /* MoreSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSettingsView.swift; sourceTree = "<group>"; };
 		CBDB69FF2556FF3A0010443A /* OptionsPickerIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsPickerIcon.swift; sourceTree = "<group>"; };
-		CBDB6A07255753480010443A /* iperf3-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iperf3-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBDB6A09255753480010443A /* iperf3_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iperf3_swiftTests.swift; sourceTree = "<group>"; };
+		CBDB6A07255753480010443A /* iperf-swiftuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iperf-swiftuiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBDB6A09255753480010443A /* iperf-swiftuiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iperf-swiftuiTests.swift"; sourceTree = "<group>"; };
 		CBDB6A0B255753480010443A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBDB6A1525575F910010443A /* iperf3_runnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iperf3_runnerTests.swift; sourceTree = "<group>"; };
+		CBDB6A1525575F910010443A /* iperf-swiftuiRunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iperf-swiftuiRunnerTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 		CBBC806025489E9C00D19BFF = {
 			isa = PBXGroup;
 			children = (
-				CBBC806B25489E9C00D19BFF /* iperf3-swift */,
-				CBDB6A08255753480010443A /* iperf3-swiftTests */,
+				CBBC806B25489E9C00D19BFF /* iperf-swiftui */,
+				CBDB6A08255753480010443A /* iperf-swiftuiTests */,
 				CBBC806A25489E9C00D19BFF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,19 +117,19 @@
 		CBBC806A25489E9C00D19BFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBBC806925489E9C00D19BFF /* iperf3-swift.app */,
-				CBDB6A07255753480010443A /* iperf3-swiftTests.xctest */,
+				CBBC806925489E9C00D19BFF /* iperf-swiftui.app */,
+				CBDB6A07255753480010443A /* iperf-swiftuiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CBBC806B25489E9C00D19BFF /* iperf3-swift */ = {
+		CBBC806B25489E9C00D19BFF /* iperf-swiftui */ = {
 			isa = PBXGroup;
 			children = (
 				CB702680255828E300BCC15F /* extensions */,
 				CB1F32D825544F2F0009DC0E /* components */,
 				CBCA40A72549FEBC009DA63C /* views */,
-				CBBC80C12548A40E00D19BFF /* iperf3-swift.entitlements */,
+				CBBC80C12548A40E00D19BFF /* iperf-swiftui.entitlements */,
 				CBBC806C25489E9C00D19BFF /* AppDelegate.swift */,
 				CBBC806E25489E9C00D19BFF /* SceneDelegate.swift */,
 				CBBC807025489E9C00D19BFF /* ContentView.swift */,
@@ -138,7 +138,7 @@
 				CBBC807A25489E9E00D19BFF /* Info.plist */,
 				CBBC807425489E9E00D19BFF /* Preview Content */,
 			);
-			path = "iperf3-swift";
+			path = "iperf-swiftui";
 			sourceTree = "<group>";
 		};
 		CBBC807425489E9E00D19BFF /* Preview Content */ = {
@@ -158,22 +158,22 @@
 			path = views;
 			sourceTree = "<group>";
 		};
-		CBDB6A08255753480010443A /* iperf3-swiftTests */ = {
+		CBDB6A08255753480010443A /* iperf-swiftuiTests */ = {
 			isa = PBXGroup;
 			children = (
-				CBDB6A09255753480010443A /* iperf3_swiftTests.swift */,
-				CBDB6A1525575F910010443A /* iperf3_runnerTests.swift */,
+				CBDB6A09255753480010443A /* iperf-swiftuiTests.swift */,
+				CBDB6A1525575F910010443A /* iperf-swiftuiRunnerTests.swift */,
 				CBDB6A0B255753480010443A /* Info.plist */,
 			);
-			path = "iperf3-swiftTests";
+			path = "iperf-swiftuiTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CBBC806825489E9C00D19BFF /* iperf3-swift */ = {
+		CBBC806825489E9C00D19BFF /* iperf-swiftui */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBBC807D25489E9E00D19BFF /* Build configuration list for PBXNativeTarget "iperf3-swift" */;
+			buildConfigurationList = CBBC807D25489E9E00D19BFF /* Build configuration list for PBXNativeTarget "iperf-swiftui" */;
 			buildPhases = (
 				CBBC806525489E9C00D19BFF /* Sources */,
 				CBBC806625489E9C00D19BFF /* Frameworks */,
@@ -183,17 +183,17 @@
 			);
 			dependencies = (
 			);
-			name = "iperf3-swift";
+			name = "iperf-swiftui";
 			packageProductDependencies = (
 				CB7026782558287E00BCC15F /* IperfSwift */,
 			);
 			productName = "iperf3-swift";
-			productReference = CBBC806925489E9C00D19BFF /* iperf3-swift.app */;
+			productReference = CBBC806925489E9C00D19BFF /* iperf-swiftui.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CBDB6A06255753480010443A /* iperf3-swiftTests */ = {
+		CBDB6A06255753480010443A /* iperf-swiftuiTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBDB6A0E255753480010443A /* Build configuration list for PBXNativeTarget "iperf3-swiftTests" */;
+			buildConfigurationList = CBDB6A0E255753480010443A /* Build configuration list for PBXNativeTarget "iperf-swiftuiTests" */;
 			buildPhases = (
 				CBDB6A03255753480010443A /* Sources */,
 				CBDB6A04255753480010443A /* Frameworks */,
@@ -204,9 +204,9 @@
 			dependencies = (
 				CBDB6A0D255753480010443A /* PBXTargetDependency */,
 			);
-			name = "iperf3-swiftTests";
+			name = "iperf-swiftuiTests";
 			productName = "iperf3-swiftTests";
-			productReference = CBDB6A07255753480010443A /* iperf3-swiftTests.xctest */;
+			productReference = CBDB6A07255753480010443A /* iperf-swiftuiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -227,7 +227,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CBBC806425489E9C00D19BFF /* Build configuration list for PBXProject "iperf3-swift" */;
+			buildConfigurationList = CBBC806425489E9C00D19BFF /* Build configuration list for PBXProject "iperf-swiftui" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -243,8 +243,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBBC806825489E9C00D19BFF /* iperf3-swift */,
-				CBDB6A06255753480010443A /* iperf3-swiftTests */,
+				CBBC806825489E9C00D19BFF /* iperf-swiftui */,
+				CBDB6A06255753480010443A /* iperf-swiftuiTests */,
 			);
 		};
 /* End PBXProject section */
@@ -294,8 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBDB6A1625575F910010443A /* iperf3_runnerTests.swift in Sources */,
-				CBDB6A0A255753480010443A /* iperf3_swiftTests.swift in Sources */,
+				CBDB6A1625575F910010443A /* iperf-swiftuiRunnerTests.swift in Sources */,
+				CBDB6A0A255753480010443A /* iperf-swiftuiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +304,7 @@
 /* Begin PBXTargetDependency section */
 		CBDB6A0D255753480010443A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBBC806825489E9C00D19BFF /* iperf3-swift */;
+			target = CBBC806825489E9C00D19BFF /* iperf-swiftui */;
 			targetProxy = CBDB6A0C255753480010443A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -442,17 +442,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "iperf3-swift/iperf3-swift.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "iperf-swiftui/iperf-swiftui.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"iperf3-swift/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"iperf-swiftui/Preview Content\"";
 				DEVELOPMENT_TEAM = P3VKCDARX4;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "iperf3-swift/Info.plist";
+				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
+				INFOPLIST_FILE = "iperf-swiftui//Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.iperf3-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.iperf-swiftui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -465,17 +466,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "iperf3-swift/iperf3-swift.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "iperf-swiftui/iperf-swiftui.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"iperf3-swift/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"iperf-swiftui/Preview Content\"";
 				DEVELOPMENT_TEAM = P3VKCDARX4;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "iperf3-swift/Info.plist";
+				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
+				INFOPLIST_FILE = "iperf-swiftui//Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.iperf3-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.iperf-swiftui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -489,7 +491,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P3VKCDARX4;
-				INFOPLIST_FILE = "iperf3-swiftTests/Info.plist";
+				INFOPLIST_FILE = "iperf-swiftuiTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,7 +501,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iperf3-swift.app/iperf3-swift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iperf-swiftui.app/iperf-swiftui";
 			};
 			name = Debug;
 		};
@@ -509,7 +511,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P3VKCDARX4;
-				INFOPLIST_FILE = "iperf3-swiftTests/Info.plist";
+				INFOPLIST_FILE = "iperf-swiftuiTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -519,14 +521,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iperf3-swift.app/iperf3-swift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iperf-swiftui.app/iperf-swiftui";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CBBC806425489E9C00D19BFF /* Build configuration list for PBXProject "iperf3-swift" */ = {
+		CBBC806425489E9C00D19BFF /* Build configuration list for PBXProject "iperf-swiftui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBBC807B25489E9E00D19BFF /* Debug */,
@@ -535,7 +537,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBBC807D25489E9E00D19BFF /* Build configuration list for PBXNativeTarget "iperf3-swift" */ = {
+		CBBC807D25489E9E00D19BFF /* Build configuration list for PBXNativeTarget "iperf-swiftui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBBC807E25489E9E00D19BFF /* Debug */,
@@ -544,7 +546,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBDB6A0E255753480010443A /* Build configuration list for PBXNativeTarget "iperf3-swiftTests" */ = {
+		CBDB6A0E255753480010443A /* Build configuration list for PBXNativeTarget "iperf-swiftuiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBDB6A0F255753480010443A /* Debug */,
