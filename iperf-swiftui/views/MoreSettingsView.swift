@@ -49,6 +49,7 @@ struct MoreSettingsView: View {
                     
                     Section {
                         TextFieldWithLabel(label: "Reporting Interval", text: $formInput.reportInterval)
+                        TextFieldWithLabel(label: "Connection Timeout", text: $formInput.timeout)
                     }
                 }
                 .navigationBarTitle("Additional Parameters", displayMode: .inline)

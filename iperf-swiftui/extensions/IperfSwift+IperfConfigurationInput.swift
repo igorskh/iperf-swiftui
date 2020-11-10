@@ -16,6 +16,7 @@ struct IperfConfigurationInput {
     var nofStreams: String = "1"
     var rate: StringWithOption<RateOption> = StringWithOption<RateOption>(value: "1", option: .Mbps, optionIndex: 1)
     var reportInterval: String = "1"
+    var timeout: String = "3"
     
     var prot: IperfProtocol {
         protocolOptions[protocolIndex]
@@ -69,6 +70,9 @@ extension IperfConfiguration {
         }
         if let v = Double(input.reportInterval) {
             reporterInterval = v
+        }
+        if let v = Double(input.timeout) {
+            timeout = v
         }
     }
 }

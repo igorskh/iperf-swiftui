@@ -21,8 +21,9 @@ struct StartButton: View {
                 Button(action: { onStartClick() }) {
                     Image(systemName: "play")
                 }
-            } else if state == .initialising  {
+            } else if state == .initialising || state == .stopping {
                 Image(systemName: "clock")
+                    .foregroundColor(.secondary)
             } else {
                 Button(action: { onStopClick() }) {
                     Image(systemName: "stop")

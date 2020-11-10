@@ -11,6 +11,15 @@
 		CB702682255828EF00BCC15F /* IperfSwift+HasDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB702681255828EF00BCC15F /* IperfSwift+HasDescription.swift */; };
 		CB702688255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB702687255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift */; };
 		CB70269425582C9600BCC15F /* RateOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB70269325582C9600BCC15F /* RateOption.swift */; };
+		CB7026BE2559740F00BCC15F /* servers.json in Resources */ = {isa = PBXBuildFile; fileRef = CB7026BD2559740E00BCC15F /* servers.json */; };
+		CB7026C225597A3F00BCC15F /* ServerEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026C125597A3F00BCC15F /* ServerEntry.swift */; };
+		CB7026C825597FB700BCC15F /* SelectServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026C725597FB700BCC15F /* SelectServerView.swift */; };
+		CB7026CC2559879000BCC15F /* SelectServerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026CB2559879000BCC15F /* SelectServerRow.swift */; };
+		CB7026D42559884800BCC15F /* SelectPortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026D32559884800BCC15F /* SelectPortView.swift */; };
+		CB7026D825598ED900BCC15F /* AddressPortStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026D725598ED900BCC15F /* AddressPortStack.swift */; };
+		CB7026DC25598F3300BCC15F /* IperfRunnerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026DB25598F3300BCC15F /* IperfRunnerController.swift */; };
+		CB7026E02559958400BCC15F /* IperfPresetsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026DF2559958400BCC15F /* IperfPresetsController.swift */; };
+		CB7026E42559B44E00BCC15F /* ServersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026E32559B44E00BCC15F /* ServersList.swift */; };
 		CB9624292556C86300E096F6 /* TextFieldWithOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9624282556C86300E096F6 /* TextFieldWithOption.swift */; };
 		CBBC806D25489E9C00D19BFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC806C25489E9C00D19BFF /* AppDelegate.swift */; };
 		CBBC806F25489E9C00D19BFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC806E25489E9C00D19BFF /* SceneDelegate.swift */; };
@@ -42,6 +51,15 @@
 		CB702681255828EF00BCC15F /* IperfSwift+HasDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IperfSwift+HasDescription.swift"; sourceTree = "<group>"; };
 		CB702687255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IperfSwift+IperfConfigurationInput.swift"; sourceTree = "<group>"; };
 		CB70269325582C9600BCC15F /* RateOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateOption.swift; sourceTree = "<group>"; };
+		CB7026BD2559740E00BCC15F /* servers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = servers.json; sourceTree = "<group>"; };
+		CB7026C125597A3F00BCC15F /* ServerEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerEntry.swift; sourceTree = "<group>"; };
+		CB7026C725597FB700BCC15F /* SelectServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectServerView.swift; sourceTree = "<group>"; };
+		CB7026CB2559879000BCC15F /* SelectServerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SelectServerRow.swift; path = "iperf-swiftui/components/SelectServerRow.swift"; sourceTree = SOURCE_ROOT; };
+		CB7026D32559884800BCC15F /* SelectPortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPortView.swift; sourceTree = "<group>"; };
+		CB7026D725598ED900BCC15F /* AddressPortStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressPortStack.swift; sourceTree = "<group>"; };
+		CB7026DB25598F3300BCC15F /* IperfRunnerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IperfRunnerController.swift; sourceTree = "<group>"; };
+		CB7026DF2559958400BCC15F /* IperfPresetsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IperfPresetsController.swift; sourceTree = "<group>"; };
+		CB7026E32559B44E00BCC15F /* ServersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersList.swift; sourceTree = "<group>"; };
 		CB9624282556C86300E096F6 /* TextFieldWithOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithOption.swift; sourceTree = "<group>"; };
 		CBBC806925489E9C00D19BFF /* iperf-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iperf-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBC806C25489E9C00D19BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,8 +106,12 @@
 			children = (
 				CBCA40A82549FECB009DA63C /* OptionsPicker.swift */,
 				CBCA40AC2549FEF7009DA63C /* StartButton.swift */,
+				CB7026D725598ED900BCC15F /* AddressPortStack.swift */,
+				CB7026C125597A3F00BCC15F /* ServerEntry.swift */,
 				CB70269325582C9600BCC15F /* RateOption.swift */,
 				CB9624282556C86300E096F6 /* TextFieldWithOption.swift */,
+				CB7026CB2559879000BCC15F /* SelectServerRow.swift */,
+				CB7026E32559B44E00BCC15F /* ServersList.swift */,
 				CBCA40B0254A238E009DA63C /* TextFieldWithLabel.swift */,
 				CBDB69FF2556FF3A0010443A /* OptionsPickerIcon.swift */,
 			);
@@ -133,8 +155,11 @@
 				CBBC806C25489E9C00D19BFF /* AppDelegate.swift */,
 				CBBC806E25489E9C00D19BFF /* SceneDelegate.swift */,
 				CBBC807025489E9C00D19BFF /* ContentView.swift */,
+				CB7026DB25598F3300BCC15F /* IperfRunnerController.swift */,
+				CB7026DF2559958400BCC15F /* IperfPresetsController.swift */,
 				CBBC807225489E9E00D19BFF /* Assets.xcassets */,
 				CBBC807725489E9E00D19BFF /* LaunchScreen.storyboard */,
+				CB7026BD2559740E00BCC15F /* servers.json */,
 				CBBC807A25489E9E00D19BFF /* Info.plist */,
 				CBBC807425489E9E00D19BFF /* Preview Content */,
 			);
@@ -154,6 +179,8 @@
 			children = (
 				CBCA40B3254A2668009DA63C /* ResultsView.swift */,
 				CBCA40B6254A267F009DA63C /* MoreSettingsView.swift */,
+				CB7026C725597FB700BCC15F /* SelectServerView.swift */,
+				CB7026D32559884800BCC15F /* SelectPortView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -256,6 +283,7 @@
 			files = (
 				CBBC807925489E9E00D19BFF /* LaunchScreen.storyboard in Resources */,
 				CBBC807625489E9E00D19BFF /* Preview Assets.xcassets in Resources */,
+				CB7026BE2559740F00BCC15F /* servers.json in Resources */,
 				CBBC807325489E9E00D19BFF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,10 +304,17 @@
 			files = (
 				CB70269425582C9600BCC15F /* RateOption.swift in Sources */,
 				CBCA40B7254A267F009DA63C /* MoreSettingsView.swift in Sources */,
+				CB7026CC2559879000BCC15F /* SelectServerRow.swift in Sources */,
+				CB7026D42559884800BCC15F /* SelectPortView.swift in Sources */,
 				CBDB6A002556FF3A0010443A /* OptionsPickerIcon.swift in Sources */,
+				CB7026C225597A3F00BCC15F /* ServerEntry.swift in Sources */,
 				CBCA40AD2549FEF7009DA63C /* StartButton.swift in Sources */,
+				CB7026DC25598F3300BCC15F /* IperfRunnerController.swift in Sources */,
+				CB7026C825597FB700BCC15F /* SelectServerView.swift in Sources */,
 				CBCA40A92549FECB009DA63C /* OptionsPicker.swift in Sources */,
 				CBBC806D25489E9C00D19BFF /* AppDelegate.swift in Sources */,
+				CB7026D825598ED900BCC15F /* AddressPortStack.swift in Sources */,
+				CB7026E42559B44E00BCC15F /* ServersList.swift in Sources */,
 				CBCA40B1254A238E009DA63C /* TextFieldWithLabel.swift in Sources */,
 				CBBC806F25489E9C00D19BFF /* SceneDelegate.swift in Sources */,
 				CB702688255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift in Sources */,
@@ -287,6 +322,7 @@
 				CBCA40B4254A2668009DA63C /* ResultsView.swift in Sources */,
 				CB702682255828EF00BCC15F /* IperfSwift+HasDescription.swift in Sources */,
 				CBBC807125489E9C00D19BFF /* ContentView.swift in Sources */,
+				CB7026E02559958400BCC15F /* IperfPresetsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +598,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "file://../iperf-swift";
 			requirement = {
-				branch = main;
+				branch = develop;
 				kind = branch;
 			};
 		};
