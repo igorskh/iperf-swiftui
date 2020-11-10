@@ -1,0 +1,196 @@
+[
+    {
+        "server": "bouygues.iperf.fr",
+        "ports": {
+            "tcp": ["9200-9222"]
+        },
+        "country": "fr",
+        "location": "Île-de-France"
+    },
+
+    {
+        "server": "ping.online.net",
+        "ports": {
+            "tcp": ["5200-5209"],
+            "udp": ["5200-5209"]
+        },
+        "country": "fr",
+        "location": "Île-de-France"
+    },
+    {
+        "server": "ping6.online.net",
+        "ports": {
+            "tcp": ["5200-5209"],
+            "udp": ["5200-5209"]
+        },
+        "country": "fr",
+        "location": "Île-de-France"
+    },
+    {
+        "server": "ping-90ms.online.net",
+        "ports": {
+            "tcp": ["5200-5209"]
+        },
+        "country": "fr",
+        "location": "Île-de-France"
+    },
+    {
+        "server": "ping6-90ms.online.net",
+        "ports": {
+            "tcp": ["5200-5209"]
+        },
+        "country": "fr",
+        "location": "Île-de-France"
+    },
+
+    {
+        "server": "speedtest.serverius.net",
+        "ports": {
+            "tcp": ["5002"],
+            "udp": ["5002"]
+        },
+        "country": "nl",
+        "location": "Amsterdam"
+    },
+
+    {
+        "server": "ping-ams1.online.net",
+        "ports": {
+            "tcp": ["5200-5209"],
+            "udp": ["5200-5209"]
+        },
+        "country": "nl",
+        "location": "Amsterdam"
+    },
+    
+    {
+        "server": "iperf.worldstream.nl",
+        "ports": {
+            "tcp": ["5201"]
+        },
+        "country": "nl",
+        "location": "Amsterdam"
+    },
+    
+    {
+        "server": "iperf.eenet.ee",
+        "ports": {
+            "tcp": ["5201"],
+            "udp": ["5201"]
+        },
+        "country": "ee"
+    },
+
+    {
+        "server": "iperf.astra.in.ua",
+        "ports": {
+            "tcp": ["5201"]
+        },
+        "country": "ua",
+        "location": "Lviv"
+    },
+    
+    {
+        "server": "iperf.volia.net",
+        "ports": {
+            "tcp": ["5201"]
+        },
+        "country": "ua",
+        "location": "Kyiv"
+    },
+
+    {
+        "server": "iperf.it-north.net",
+        "ports": {
+            "tcp": ["5200-5209"],
+            "udp": ["5200-5209"]
+        },
+        "country": "kz"
+    },
+
+    {
+        "server": "iperf.biznetnetworks.com",
+        "ports": {
+            "tcp": ["5201-5203"]
+        },
+        "country": "id",
+        "location": "Jakarta"
+    },
+
+    {
+        "server": "iperf.scottlinux.com",
+        "ports": {
+            "tcp": ["5201"],
+            "udp": ["5201"]
+        },
+        "country": "us",
+        "location": "California"
+    },
+    
+    {
+        "server": "speedtest.iveloz.net.br",
+        "ports": {
+            "tcp": ["5201-5209"],
+            "udp": ["5201-5209"]
+        },
+        "country": "br",
+        "location": "San Paulo"
+    },
+    
+
+    {
+        "server": "iperf.he.net",
+        "ports": {
+            "tcp": ["5201"],
+            "udp": ["5201"]
+        },
+        "country": "us",
+        "location": "California"
+    },
+
+    {
+        "server": "speedtest.wtnet.de",
+        "ports": {
+            "tcp": ["5200-5209"]
+        },
+        "country": "de",
+        "location": "Hamburg"
+    },
+
+    {
+        "server": "speed.myloc.de",
+        "ports": {
+            "tcp": ["5209"]
+        },
+        "country": "de",
+        "location": "Düsseldorf"
+    },
+
+    {
+        "server": "ping.netnik.de",
+        "ports": {
+            "tcp": ["5201"]
+        },
+        "country": "de",
+        "location": "Düsseldorf"
+    },
+
+    {
+        "server": "iperf.wifx.net",
+        "ports": {
+            "tcp": ["5200-5209"],
+            "udp": ["5200-5209"]
+        },
+        "country": "ch",
+        "location": "Zurich"
+    },
+
+    {
+        "server": "speedtest.hostkey.ru",
+        "ports": {
+            "tcp": ["5201-5203"]
+        },
+        "country": "ru",
+        "location": "Moscow"
+    }
+]
