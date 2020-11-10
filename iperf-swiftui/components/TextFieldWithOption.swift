@@ -20,13 +20,17 @@ struct TextFieldWithOption<T>: View where T: TextFieldOption {
                 text: $value.value,
                 keyboardType: keyboardType
             )
-            OptionsPicker(
-                options: options,
-                selected: $value.optionIndex,
-                onChange: { index in
-                    value.option = options[value.optionIndex]
-                }
-            )
+            HStack {
+                Spacer()
+                
+                OptionsPicker(
+                    options: options,
+                    selected: $value.optionIndex,
+                    onChange: { index in
+                        value.option = options[value.optionIndex]
+                    }
+                )
+            }
         }
     }
 }
