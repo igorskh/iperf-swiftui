@@ -5,8 +5,8 @@
         "package": "IperfSwift",
         "repositoryURL": "/Volumes/MacSSD/Dev/xcode/iperf-swift",
         "state": {
-          "branch": "main",
-          "revision": "3f997b508d3ec526844c13944aee55062fcfb1ac",
+          "branch": "develop",
+          "revision": "345744c37482cda8fa65d0ab4d237a3f02cefbac",
           "version": null
         }
       }

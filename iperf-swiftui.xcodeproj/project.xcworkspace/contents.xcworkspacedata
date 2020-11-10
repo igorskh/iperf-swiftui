@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Volumes/MacSSD/Dev/xcode/iperf3-swift/iperf-swiftui.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
