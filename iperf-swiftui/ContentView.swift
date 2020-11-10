@@ -11,39 +11,24 @@ import IperfSwift
 let barButtonHeight: CGFloat = 16.0
 
 struct ContentView: View {
-    private var iperfRunner: IperfRunner = IperfRunner()
-    @State var runnerState: IperfRunnerState = .ready
-
-    @State var debugDescription: String = ""
-    @State var displayError: Bool = false
-    @State var results: [IperfIntervalResult] = []
+    @ObservedObject var iperfRunnerController = IperfRunnerController()
+    @ObservedObject var iperfPresetsController = IperfPresetsController()
+    
     @State var formInput = IperfConfigurationInput(
         address: "127.0.0.1",
         port: "5201"
     )
-    
-    func onResultReceived(result: IperfIntervalResult) {
-        if result.runnerState != .unknown && result.runnerState != runnerState {
-            runnerState = result.runnerState
-        }
-        if result.streams.count > 0 {
-            results.append(result)
-        }
-        debugDescription = result.debugDescription
-        displayError = result.hasError
-    }
     
     var body: some View {
         VStack {
             Text("iPerf3 \(formInput.role.description)")
                 .font(.largeTitle)
             
-            HStack {
-                TextField("Address", text: $formInput.address)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                TextField("Port", text: $formInput.port)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-            }.animation(Animation.spring().delay(1.0))
+            AddressPortStack(
+                formInput: $formInput,
+                serverEntries: $iperfPresetsController.serverEntries,
+                selectedPresetIndex: $iperfPresetsController.selectedPresetIndex
+            )
             
             HStack {
                 OptionsPicker(
@@ -61,24 +46,21 @@ struct ContentView: View {
                 Spacer()
                 
                 StartButton(
-                    state: $runnerState,
+                    state: $iperfRunnerController.runnerState,
                     onStartClick: {
-                        results = []
-                        debugDescription = ""
-                        iperfRunner.start(with: IperfConfiguration(formInput), onResultReceived)
+                        iperfRunnerController.start(with: formInput)
                     },
                     onStopClick: {
-                        iperfRunner.stop()
+                        iperfRunnerController.stop()
                     })
             }
             .padding(.vertical, 10)
             
-            if displayError {
-                Text(debugDescription).padding(.vertical, 10)
+            if iperfRunnerController.displayError && iperfRunnerController.debugDescription.count > 0 {
+                Text(iperfRunnerController.debugDescription).padding(.vertical, 10)
             }
             
-            ResultsView(results: $results)
-            
+            ResultsView(results: $iperfRunnerController.results)
             Spacer()
         }
         .padding(20)
