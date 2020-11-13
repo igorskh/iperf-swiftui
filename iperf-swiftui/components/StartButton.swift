@@ -17,7 +17,7 @@ struct StartButton: View {
     
     var body: some View {
         ZStack {
-            if state == .ready {
+            if state == .ready || state == .finished || state == .error {
                 Button(action: { onStartClick() }) {
                     Image(systemName: "play")
                 }
