@@ -62,18 +62,3 @@ extension IperfDirection: HasDescription {
         }
     }
 }
-
-extension IperfThroughput {
-    var pretty: String {
-        if bps <= 1024 {
-            return "\(String(format: "%.1f", bps)) bps"
-        }
-        if Kbps <= 1024 {
-            return "\(String(format: "%.1f", Kbps)) Kbps"
-        }
-        if Mbps <= 1024 {
-            return "\(String(format: "%.1f", Mbps)) Mbps"
-        }
-        return "\(String(format: "%.1f", Gbps)) Gbps"
-    }
-}
