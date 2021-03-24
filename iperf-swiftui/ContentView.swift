@@ -11,7 +11,7 @@ import IperfSwift
 let barButtonHeight: CGFloat = 16.0
 
 struct ContentView: View {
-    @ObservedObject var iperfRunnerController = IperfRunnerController()
+    @ObservedObject var testsController = IperfRunnerTestsController()
     @ObservedObject var iperfPresetsController = IperfPresetsController()
     
     @State var formInput = IperfConfigurationInput(
@@ -24,46 +24,30 @@ struct ContentView: View {
             Text("iPerf3 \(formInput.role.description)")
                 .font(.largeTitle)
             
-            AddressPortStack(
+            InlineSettingsView(
                 formInput: $formInput,
                 serverEntries: $iperfPresetsController.serverEntries,
-                selectedPresetIndex: $iperfPresetsController.selectedPresetIndex
-            )
-            
-            HStack {
-                OptionsPicker(
-                    options: formInput.roleOptions,
-                    selected: $formInput.roleIndex
-                )
+                selectedPresetIndex: $iperfPresetsController.selectedPresetIndex) {
                 
-                if formInput.role == .client {
-                    OptionsPicker(
-                        options: formInput.directionOptions,
-                        selected: $formInput.directionIndex
-                    )
+                Button(action: { testsController.addTest(with: formInput) }) {
+                    Image(systemName: "plus")
                 }
-                MoreSettingsView(formInput: $formInput)
-                Spacer()
-                
-                StartButton(
-                    state: $iperfRunnerController.runnerState,
-                    onStartClick: {
-                        iperfRunnerController.start(with: formInput)
-                    },
-                    onStopClick: {
-                        iperfRunnerController.stop()
-                    })
+                .font(.title)
             }
             .padding(.vertical, 10)
             
-            if iperfRunnerController.displayError && iperfRunnerController.debugDescription.count > 0 {
-                Text(iperfRunnerController.debugDescription).padding(.vertical, 10)
+            ScrollView {
+                ForEach(testsController.tests.reversed()) { t in
+                    if !t.isDeleted {
+                        IperfTestView(iperfRunnerController: t)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .animation(.easeIn)
+                            .transition(.slide)
+                    }
+                }
             }
-            
-            ResultsView(results: $iperfRunnerController.results)
-            Spacer()
         }
-        .padding(20)
+        .padding(10)
     }
 }
 

@@ -20,6 +20,13 @@
 		CB7026DC25598F3300BCC15F /* IperfRunnerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026DB25598F3300BCC15F /* IperfRunnerController.swift */; };
 		CB7026E02559958400BCC15F /* IperfPresetsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026DF2559958400BCC15F /* IperfPresetsController.swift */; };
 		CB7026E42559B44E00BCC15F /* ServersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026E32559B44E00BCC15F /* ServersList.swift */; };
+		CB7026E8255A8A3400BCC15F /* IperfRunnerTestsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026E7255A8A3400BCC15F /* IperfRunnerTestsController.swift */; };
+		CB7026F0255A9E8E00BCC15F /* IperfTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026EF255A9E8E00BCC15F /* IperfTestView.swift */; };
+		CB7026F4255AC66500BCC15F /* IperfIntervalResultArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026F3255AC66500BCC15F /* IperfIntervalResultArray.swift */; };
+		CB7026F8255AC68900BCC15F /* IperfRunnerState+HasDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026F7255AC68900BCC15F /* IperfRunnerState+HasDescription.swift */; };
+		CB7026FC255AF30A00BCC15F /* SingleTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026FB255AF30A00BCC15F /* SingleTestView.swift */; };
+		CB702700255AF3B600BCC15F /* InlineSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7026FF255AF3B600BCC15F /* InlineSettingsView.swift */; };
+		CB702704255AF85A00BCC15F /* IperfThroughput+pretty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB702703255AF85A00BCC15F /* IperfThroughput+pretty.swift */; };
 		CB9624292556C86300E096F6 /* TextFieldWithOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9624282556C86300E096F6 /* TextFieldWithOption.swift */; };
 		CBBC806D25489E9C00D19BFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC806C25489E9C00D19BFF /* AppDelegate.swift */; };
 		CBBC806F25489E9C00D19BFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC806E25489E9C00D19BFF /* SceneDelegate.swift */; };
@@ -60,6 +67,13 @@
 		CB7026DB25598F3300BCC15F /* IperfRunnerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IperfRunnerController.swift; sourceTree = "<group>"; };
 		CB7026DF2559958400BCC15F /* IperfPresetsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IperfPresetsController.swift; sourceTree = "<group>"; };
 		CB7026E32559B44E00BCC15F /* ServersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersList.swift; sourceTree = "<group>"; };
+		CB7026E7255A8A3400BCC15F /* IperfRunnerTestsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IperfRunnerTestsController.swift; sourceTree = "<group>"; };
+		CB7026EF255A9E8E00BCC15F /* IperfTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IperfTestView.swift; sourceTree = "<group>"; };
+		CB7026F3255AC66500BCC15F /* IperfIntervalResultArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IperfIntervalResultArray.swift; sourceTree = "<group>"; };
+		CB7026F7255AC68900BCC15F /* IperfRunnerState+HasDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IperfRunnerState+HasDescription.swift"; sourceTree = "<group>"; };
+		CB7026FB255AF30A00BCC15F /* SingleTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTestView.swift; sourceTree = "<group>"; };
+		CB7026FF255AF3B600BCC15F /* InlineSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineSettingsView.swift; sourceTree = "<group>"; };
+		CB702703255AF85A00BCC15F /* IperfThroughput+pretty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IperfThroughput+pretty.swift"; sourceTree = "<group>"; };
 		CB9624282556C86300E096F6 /* TextFieldWithOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithOption.swift; sourceTree = "<group>"; };
 		CBBC806925489E9C00D19BFF /* iperf-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iperf-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBC806C25489E9C00D19BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				CB702681255828EF00BCC15F /* IperfSwift+HasDescription.swift */,
+				CB702703255AF85A00BCC15F /* IperfThroughput+pretty.swift */,
+				CB7026F7255AC68900BCC15F /* IperfRunnerState+HasDescription.swift */,
+				CB7026F3255AC66500BCC15F /* IperfIntervalResultArray.swift */,
 				CB702687255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift */,
 			);
 			path = extensions;
@@ -156,7 +173,9 @@
 				CBBC806E25489E9C00D19BFF /* SceneDelegate.swift */,
 				CBBC807025489E9C00D19BFF /* ContentView.swift */,
 				CB7026DB25598F3300BCC15F /* IperfRunnerController.swift */,
+				CB7026FB255AF30A00BCC15F /* SingleTestView.swift */,
 				CB7026DF2559958400BCC15F /* IperfPresetsController.swift */,
+				CB7026E7255A8A3400BCC15F /* IperfRunnerTestsController.swift */,
 				CBBC807225489E9E00D19BFF /* Assets.xcassets */,
 				CBBC807725489E9E00D19BFF /* LaunchScreen.storyboard */,
 				CB7026BD2559740E00BCC15F /* servers.json */,
@@ -178,8 +197,10 @@
 			isa = PBXGroup;
 			children = (
 				CBCA40B3254A2668009DA63C /* ResultsView.swift */,
+				CB7026EF255A9E8E00BCC15F /* IperfTestView.swift */,
 				CBCA40B6254A267F009DA63C /* MoreSettingsView.swift */,
 				CB7026C725597FB700BCC15F /* SelectServerView.swift */,
+				CB7026FF255AF3B600BCC15F /* InlineSettingsView.swift */,
 				CB7026D32559884800BCC15F /* SelectPortView.swift */,
 			);
 			path = views;
@@ -302,16 +323,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB702700255AF3B600BCC15F /* InlineSettingsView.swift in Sources */,
 				CB70269425582C9600BCC15F /* RateOption.swift in Sources */,
 				CBCA40B7254A267F009DA63C /* MoreSettingsView.swift in Sources */,
 				CB7026CC2559879000BCC15F /* SelectServerRow.swift in Sources */,
 				CB7026D42559884800BCC15F /* SelectPortView.swift in Sources */,
 				CBDB6A002556FF3A0010443A /* OptionsPickerIcon.swift in Sources */,
 				CB7026C225597A3F00BCC15F /* ServerEntry.swift in Sources */,
+				CB7026F8255AC68900BCC15F /* IperfRunnerState+HasDescription.swift in Sources */,
 				CBCA40AD2549FEF7009DA63C /* StartButton.swift in Sources */,
+				CB7026FC255AF30A00BCC15F /* SingleTestView.swift in Sources */,
 				CB7026DC25598F3300BCC15F /* IperfRunnerController.swift in Sources */,
 				CB7026C825597FB700BCC15F /* SelectServerView.swift in Sources */,
 				CBCA40A92549FECB009DA63C /* OptionsPicker.swift in Sources */,
+				CB7026E8255A8A3400BCC15F /* IperfRunnerTestsController.swift in Sources */,
 				CBBC806D25489E9C00D19BFF /* AppDelegate.swift in Sources */,
 				CB7026D825598ED900BCC15F /* AddressPortStack.swift in Sources */,
 				CB7026E42559B44E00BCC15F /* ServersList.swift in Sources */,
@@ -319,10 +344,13 @@
 				CBBC806F25489E9C00D19BFF /* SceneDelegate.swift in Sources */,
 				CB702688255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift in Sources */,
 				CB9624292556C86300E096F6 /* TextFieldWithOption.swift in Sources */,
+				CB7026F4255AC66500BCC15F /* IperfIntervalResultArray.swift in Sources */,
 				CBCA40B4254A2668009DA63C /* ResultsView.swift in Sources */,
 				CB702682255828EF00BCC15F /* IperfSwift+HasDescription.swift in Sources */,
 				CBBC807125489E9C00D19BFF /* ContentView.swift in Sources */,
 				CB7026E02559958400BCC15F /* IperfPresetsController.swift in Sources */,
+				CB702704255AF85A00BCC15F /* IperfThroughput+pretty.swift in Sources */,
+				CB7026F0255A9E8E00BCC15F /* IperfTestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +513,7 @@
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = "iperf-swiftui//Info.plist";
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,6 +538,7 @@
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = "iperf-swiftui//Info.plist";
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

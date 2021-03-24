@@ -13,15 +13,18 @@ struct ResultsView: View {
     @Binding var results: [IperfIntervalResult]
     
     var body: some View {
-        List {
+        VStack {
             ForEach(results.reversed()) { res in
                 HStack {
-                    Text("\(String(format: "%.1f", res.duration))")
+                    Text("\(String(format: "%.2f-%.2f", res.startTime - results.first!.startTime, res.endTime - results.first!.startTime))")
                     Spacer()
-                    Text("\(res.throughput.pretty)")
+                    Text("\(res.throughput.pretty(format: "%.0f"))")
                 }
             }
-        }.animation(.linear)
+        }
+        .animation(.linear)
+        .padding(.horizontal)
+        .padding(.bottom)
     }
 }
 
