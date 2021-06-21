@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB7026792558287E00BCC15F /* IperfSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB7026782558287E00BCC15F /* IperfSwift */; };
+		CB2697A12680ECCD00082A6B /* IperfSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB2697A02680ECCD00082A6B /* IperfSwift */; };
 		CB702682255828EF00BCC15F /* IperfSwift+HasDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB702681255828EF00BCC15F /* IperfSwift+HasDescription.swift */; };
 		CB702688255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB702687255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift */; };
 		CB70269425582C9600BCC15F /* RateOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB70269325582C9600BCC15F /* RateOption.swift */; };
@@ -101,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB7026792558287E00BCC15F /* IperfSwift in Frameworks */,
+				CB2697A12680ECCD00082A6B /* IperfSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +233,7 @@
 			);
 			name = "iperf-swiftui";
 			packageProductDependencies = (
-				CB7026782558287E00BCC15F /* IperfSwift */,
+				CB2697A02680ECCD00082A6B /* IperfSwift */,
 			);
 			productName = "iperf3-swift";
 			productReference = CBBC806925489E9C00D19BFF /* iperf-swiftui.app */;
@@ -285,7 +285,7 @@
 			);
 			mainGroup = CBBC806025489E9C00D19BFF;
 			packageReferences = (
-				CB7026772558287E00BCC15F /* XCRemoteSwiftPackageReference "iperf-swift" */,
+				CB26979F2680ECCD00082A6B /* XCRemoteSwiftPackageReference "iperf-swift" */,
 			);
 			productRefGroup = CBBC806A25489E9C00D19BFF /* Products */;
 			projectDirPath = "";
@@ -624,20 +624,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CB7026772558287E00BCC15F /* XCRemoteSwiftPackageReference "iperf-swift" */ = {
+		CB26979F2680ECCD00082A6B /* XCRemoteSwiftPackageReference "iperf-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "file://../iperf-swift";
+			repositoryURL = "https://github.com/igorskh/iperf-swift";
 			requirement = {
-				branch = develop;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CB7026782558287E00BCC15F /* IperfSwift */ = {
+		CB2697A02680ECCD00082A6B /* IperfSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB7026772558287E00BCC15F /* XCRemoteSwiftPackageReference "iperf-swift" */;
+			package = CB26979F2680ECCD00082A6B /* XCRemoteSwiftPackageReference "iperf-swift" */;
 			productName = IperfSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
