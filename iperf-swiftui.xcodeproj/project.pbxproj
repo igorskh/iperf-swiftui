@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB2697A12680ECCD00082A6B /* IperfSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB2697A02680ECCD00082A6B /* IperfSwift */; };
 		CB702682255828EF00BCC15F /* IperfSwift+HasDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB702681255828EF00BCC15F /* IperfSwift+HasDescription.swift */; };
 		CB702688255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB702687255829BE00BCC15F /* IperfSwift+IperfConfigurationInput.swift */; };
 		CB70269425582C9600BCC15F /* RateOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB70269325582C9600BCC15F /* RateOption.swift */; };
@@ -34,6 +33,7 @@
 		CBBC807325489E9E00D19BFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBC807225489E9E00D19BFF /* Assets.xcassets */; };
 		CBBC807625489E9E00D19BFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBC807525489E9E00D19BFF /* Preview Assets.xcassets */; };
 		CBBC807925489E9E00D19BFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBC807725489E9E00D19BFF /* LaunchScreen.storyboard */; };
+		CBC26D3328E18F2C00483F44 /* IperfSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CBC26D3228E18F2C00483F44 /* IperfSwift */; };
 		CBCA40A92549FECB009DA63C /* OptionsPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40A82549FECB009DA63C /* OptionsPicker.swift */; };
 		CBCA40AD2549FEF7009DA63C /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40AC2549FEF7009DA63C /* StartButton.swift */; };
 		CBCA40B1254A238E009DA63C /* TextFieldWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA40B0254A238E009DA63C /* TextFieldWithLabel.swift */; };
@@ -101,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB2697A12680ECCD00082A6B /* IperfSwift in Frameworks */,
+				CBC26D3328E18F2C00483F44 /* IperfSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +233,7 @@
 			);
 			name = "iperf-swiftui";
 			packageProductDependencies = (
-				CB2697A02680ECCD00082A6B /* IperfSwift */,
+				CBC26D3228E18F2C00483F44 /* IperfSwift */,
 			);
 			productName = "iperf3-swift";
 			productReference = CBBC806925489E9C00D19BFF /* iperf-swiftui.app */;
@@ -285,7 +285,7 @@
 			);
 			mainGroup = CBBC806025489E9C00D19BFF;
 			packageReferences = (
-				CB26979F2680ECCD00082A6B /* XCRemoteSwiftPackageReference "iperf-swift" */,
+				CBC26D3128E18F2C00483F44 /* XCRemoteSwiftPackageReference "iperf-swift" */,
 			);
 			productRefGroup = CBBC806A25489E9C00D19BFF /* Products */;
 			projectDirPath = "";
@@ -624,20 +624,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CB26979F2680ECCD00082A6B /* XCRemoteSwiftPackageReference "iperf-swift" */ = {
+		CBC26D3128E18F2C00483F44 /* XCRemoteSwiftPackageReference "iperf-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/igorskh/iperf-swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.1;
+				minimumVersion = 1.3.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CB2697A02680ECCD00082A6B /* IperfSwift */ = {
+		CBC26D3228E18F2C00483F44 /* IperfSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB26979F2680ECCD00082A6B /* XCRemoteSwiftPackageReference "iperf-swift" */;
+			package = CBC26D3128E18F2C00483F44 /* XCRemoteSwiftPackageReference "iperf-swift" */;
 			productName = IperfSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
